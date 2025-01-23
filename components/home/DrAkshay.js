@@ -10,7 +10,7 @@ import { headList3, headList9 } from "../constants/titlefile";
 
 
 
-const DrDombe = () => {
+const DrHeeral  = () => {
 
   // Define the fade-up animation variants
   const fadeUpVariants = {
@@ -42,7 +42,7 @@ const DrDombe = () => {
 
   return (
     <>
-      <Box id="Doctors" sx={{ pt: 7,pb:10,textAlign:'center',backgroundColor:'white' }}>
+      <Box id="Doctors" sx={{ pt: 0,pb:10,textAlign:'center',backgroundColor:'white' }}>
         <Container>
    <Heading  data={headList3}/>
         </ Container>
@@ -55,7 +55,7 @@ const DrDombe = () => {
         >
 
 
-          <Grid item xs={12} sm={5} sx={{pb:2}}>
+          <Grid item xs={12} sm={5} sx={{px:{xs:2,sm:0,md:5}}}>
             {/* Framer Motion div with whileInView to trigger zoom and position shift */}
             <motion.div
               initial={{ scale: 0.3, y: 0 }} // Start with normal scale and no shift
@@ -66,16 +66,17 @@ const DrDombe = () => {
               }}
               viewport={{ once: true }} // Animation triggers only once
             >
-              
+              <Box>
               <Image
-                src="/images/dr/drleena5.jpg"
-                alt=" Dr. Nikhil Abbad at College Road Dental Clinic"
+                src="/images/dr/3.jpg"
+                alt="Dr. Heeral Chikhal"
                 width={100}
                 height={100}
                layout="responsive"
-               style={{borderTopRightRadius:0,borderBottomRightRadius:70}}
+               style={{borderBottomRightRadius:70,border:'1px solid white',boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset',}}
                
               />
+              </Box>
 
             </motion.div>
           </Grid>
@@ -88,10 +89,6 @@ const DrDombe = () => {
               viewport={{ once: true }} // Optionally only animate once
             >
               <Box sx={{ px: 2 }}>
-
-              
-              
-
                 <Box
                   sx={{
 
@@ -100,22 +97,19 @@ const DrDombe = () => {
                     marginBottom: 2.5,
                     fontSize: 17,
                     textAlign: "justify",
-                    mt: 2
-
+                    mt: 2,
+px:2
                   }}
                 >
+                 <Typography variant="h3" sx={{color:'primary.dark',fontWeight:500,borderLeft:'4px solid #01a6a2',lineHeight:1.5,paddingLeft: '10px',}}>Dr. Heeral Chikhal</Typography>
+                  <Typography variant="h5" sx={{color:'primary.light',fontWeight:600, paddingLeft: '15px',}}>  MDS - Prosthodontist & Implantologist</Typography>
+                 <br></br>
                   <Typography>
-                  Dr. Sagar R. Dombe, M.D.S in Orthodontics, is a highly respected dental practitioner with over 8 years of clinical experience. As a Professor at Dr. D. Y. Patil Medical University since 2009, he combines academic excellence with practical expertise. Dr. Dombe is also the founder of Shape32, an innovative aligner manufacturing lab, and serves as the Founder Secretary of the Indian Aligner Society, contributing significantly to the advancement of orthodontic practices in India.<br></br>
-
-<b>Education:</b> M.D.S in Orthodontics from Dr. D.Y. Patil Medical College, Pune.<br/>
-<b>Experience:</b> Over 8 years in clinical practice; Professor at Dr. D.Y. Patil Medical University since 2009.<br/>
-<b>Innovations:</b> Founder of Shape32, producing 100-150 aligner models daily.<br/>
-<b>Leadership:</b> Key Opinion Leader (KOL) for 3Shape since 2018.<br/>
-<b>Contributions:</b> Founder Secretary of the Indian Aligner Society.<br/>
-<b>Presentations:</b> Notable papers on orthodontic topics presented at prestigious conferences since 2007.<br/>
-<b>Academic Achievements:</b><br/>
-Ranked 1st in All India AMUPMDC exam (2006).<br></br>
-Consistently ranked first in undergraduate examinations (2001-2003).
+                  Dr. Heeral Chikhal is a highly qualified Prosthodontist and Implantologist, recognized as one of the best female dentists in Borivali West, Mumbai. With over 13 years of experience, she specializes in full mouth rehabilitation, veneers, smile designing, implants, dentures, teeth whitening, crowns, and bridges. Dr. Chikhal is dedicated to providing personalized care that meets the unique needs of each patient, utilizing advanced technology and techniques to achieve optimal results.<br></br><br></br>
+MDS in Prosthodontics and Implantology<br/>
+13+ Years of experience<br/>
+Former Assistant Professor at GDC, Mumbai<br/>
+Government Dental College Alumni, Mumbai<br/>
 
                    </Typography>
 
@@ -127,7 +121,7 @@ Consistently ranked first in undergraduate examinations (2001-2003).
             </motion.div>
           </Grid>
          
-          <Grid item xs={12} sm={7}>
+          <Grid item xs={12} sm={7} sx={{p:3}} order={{xs:1,md:0}}>
             <motion.div
               className="textcontainer"
               variants={fadeUpVariants}
@@ -135,11 +129,6 @@ Consistently ranked first in undergraduate examinations (2001-2003).
               whileInView="visible"    // Animate to the visible state when in view
               viewport={{ once: true }} // Optionally only animate once
             >
-              <Box sx={{ px: 2 }}>
-
-              
-              
-
                 <Box
                   sx={{
 
@@ -148,22 +137,20 @@ Consistently ranked first in undergraduate examinations (2001-2003).
                     marginBottom: 2.5,
                     fontSize: 17,
                     textAlign: "justify",
-                    mt: 2
+                    mt: 2,
 
                   }}
                 >
+                    <Typography variant="h3" sx={{color:'primary.dark',fontWeight:500,borderLeft:'4px solid #01a6a2',lineHeight:1.5,paddingLeft: '10px'}}>Dr. Kalpesh Dey</Typography>
+                  <Typography variant="h5" sx={{color:'primary.light',fontWeight:600,paddingLeft:'15px'}}> MDS - Endodontist & Cosmetic Dentist</Typography>
+                 <br></br>
                   <Typography>
-                  Dr. Sagar R. Dombe, M.D.S in Orthodontics, is a highly respected dental practitioner with over 8 years of clinical experience. As a Professor at Dr. D. Y. Patil Medical University since 2009, he combines academic excellence with practical expertise. Dr. Dombe is also the founder of Shape32, an innovative aligner manufacturing lab, and serves as the Founder Secretary of the Indian Aligner Society, contributing significantly to the advancement of orthodontic practices in India.<br></br>
-
-<b>Education:</b> M.D.S in Orthodontics from Dr. D.Y. Patil Medical College, Pune.<br/>
-<b>Experience:</b> Over 8 years in clinical practice; Professor at Dr. D.Y. Patil Medical University since 2009.<br/>
-<b>Innovations:</b> Founder of Shape32, producing 100-150 aligner models daily.<br/>
-<b>Leadership:</b> Key Opinion Leader (KOL) for 3Shape since 2018.<br/>
-<b>Contributions:</b> Founder Secretary of the Indian Aligner Society.<br/>
-<b>Presentations:</b> Notable papers on orthodontic topics presented at prestigious conferences since 2007.<br/>
-<b>Academic Achievements:</b><br/>
-Ranked 1st in All India AMUPMDC exam (2006).<br></br>
-Consistently ranked first in undergraduate examinations (2001-2003).
+                 
+                  Dr. Kalpesh Dey is an accomplished Endodontist and Cosmetic Dentist, known as a leading dentist in Borivali West. He specializes in root canal treatments, single sitting root canals, and aesthetic enhancements. With a strong focus on patient comfort, Dr. Dey ensures high-quality dental care for all his patients.<br/><br/>
+MDS in Endodontics and Cosmetic Dentistry<br/>
+13+ Years of experience<br/>
+Former Assistant Professor at GDC, Mumbai<br/>
+Government Dental College Alumni, Mumbai<br/>
 
                    </Typography>
 
@@ -171,11 +158,10 @@ Consistently ranked first in undergraduate examinations (2001-2003).
 
                 {/* <input type="checkbox" class="check" /> */}
 
-              </Box>
+              
             </motion.div>
           </Grid>
-          
-          <Grid item xs={12} sm={5}>
+          <Grid item xs={12} sm={5} sx={{px:{xs:2,sm:0,md:5}}} order={{xs:0,md:1}}>
             {/* Framer Motion div with whileInView to trigger zoom and position shift */}
             <motion.div
               initial={{ scale: 0.3, y: 0 }} // Start with normal scale and no shift
@@ -186,23 +172,27 @@ Consistently ranked first in undergraduate examinations (2001-2003).
               }}
               viewport={{ once: true }} // Animation triggers only once
             >
-              
+              <Box
+>
               <Image
-                src="/images/dr/drleena5.jpg"
-                alt=" Dr. Nikhil Abbad at College Road Dental Clinic"
+                src="/images/dr/2.jpg"
+                alt="Dr. Heeral Chikhal"
                 width={100}
                 height={100}
                layout="responsive"
-               style={{borderTopLeftRadius:70}}
+               
+               style={{borderTopLeftRadius:70,border:'1px solid white',boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset'}}
                
               />
+              </Box>
 
             </motion.div>
           </Grid>
+          
         </Grid>
 
       </Box>
     </>
   );
 };
-export default DrDombe;
+export default DrHeeral;

@@ -42,7 +42,8 @@ const validationSchema = yup.object({
 });
 
 const Contact = () => {
-  const contactno1 = "9890840340";
+  const contactno1 = "9820097046";
+  const contactno2 = "8169204284";
   const router = useRouter();
 
   const onSubmit = async (values, submitProps) => {
@@ -78,37 +79,9 @@ const Contact = () => {
   };
 
   return (
-    <Box id='contactform' sx={{ backgroundColor: 'white'}}>
+   
       
-      <section id="contact" class="contact"
-  style={{
-    position: "relative",
-    background: "linear-gradient(to right, rgb(233, 224, 219), rgb(233, 224, 219))",
-    overflow: "hidden",
-    paddingTop: "150px", // Ensures content stays below the wave
-    paddingBottom: "50px",
-  }}
->
-  {/* Wave Section */}
-  <div style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "150px" }}>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-      preserveAspectRatio="none"
-      style={{
-        display: "block",
-        width: "100%",
-        height: "100%",
-        transform: "rotate(180deg)", // Flips the wave to the top
-      }}
-    >
-      <path
-        fill="#ffffff"
-        fillOpacity="1"
-        d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,213.3C840,203,960,149,1080,122.7C1200,96,1320,96,1380,96L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-      ></path>
-    </svg>
-  </div>
+      <section id="contactform" class="contact" style={{paddingTop:50,paddingBottom:50}}>
       
   <Container>
 <Heading data={headList8}/>
@@ -127,7 +100,7 @@ const Contact = () => {
                 <div class="info-box mt-4">  
                   <LocationOnIcon className='bx'/>
                     <h3 style={{fontSize:'18px'}}>Our Location</h3>
-                    <p>101, 102, 103 & 106, Sadguru Sai Paradise, Rahatani-Link Road,<br></br> Thergaon, Pimpri-Chinchwad, Pune, Maharashtra 411033
+                    <p>8th floor, 807, Friends Business Bay, L.T. Rd, opp. Veer Savarkar Garden,<br/> above Malabar Jewellers, Borivali West, Mumbai -  400 092.
                     </p>
                   </div>
                 </Grid>
@@ -135,7 +108,7 @@ const Contact = () => {
                   <div class="info-box mt-4">
                     <EmailTwoToneIcon className='bx'></EmailTwoToneIcon>
                     <h3>Working Hours</h3>
-                    <p> Monday to Saturday: 10 am - 8 pm<br/>
+                    <p> Monday to Saturday<br/> 10 am - 8:30 pm<br/>
                     Sunday - Closed
                     </p>
                     
@@ -148,9 +121,12 @@ const Contact = () => {
                       <CallTwoToneIcon   className='bx' />
                   
                     <h3>Contact Us</h3>
-                    <Link href={`tel:${contactno1}`} target="_blank" sx={{color:'primary.dark'}}>+919890840340</Link>
+                    <Link href={`tel:${contactno1}`} target="_blank" sx={{color:'primary.dark'}}>+919820097046</Link>
                     <br/>
-                    <Link href={`mailto:${'shape32aligners@gmail.com'}`} target="_blank" sx={{color:'primary.dark'}}>shape32aligners@gmail.com</Link>
+                    <Link href={`tel:${contactno2}`} target="_blank" sx={{color:'primary.dark'}}>+918169204284</Link>
+                    
+                    <br/>
+                    <Link href={`mailto:${'smilesolutions99@gmail.com'}`} target="_blank" sx={{color:'primary.dark'}}>smilesolutions99@gmail.com</Link>
                   </div>
                 </Grid>
               </Grid>
@@ -265,7 +241,7 @@ const Contact = () => {
                             textTransform: 'capitalize',
                             fontSize: 16,
                             minWidth: 160,
-                            backgroundColor:'primary.dark'
+                            backgroundColor:'primary.light'
                           }}
                           type='submit'
                         >
@@ -282,7 +258,7 @@ const Contact = () => {
           </Container>
         </section>
      
-    </Box>
+ 
   );
 };
 export default Contact;

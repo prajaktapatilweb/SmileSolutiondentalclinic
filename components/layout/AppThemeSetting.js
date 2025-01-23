@@ -10,7 +10,7 @@ import ScrollUp from '../home/ScrollUp';
 const AppThemeSetting = () => {
  
 
-  const contactno2 = "+919713435111";
+  const contactno2 = "+9820097046 ";
 
   return (
     <>    
@@ -18,7 +18,7 @@ const AppThemeSetting = () => {
       sx={{
         position: 'fixed',
         right: 0,
-        bottom: { xs: 85, xl: 125 },
+        bottom: { xs: 50, xl: 125 },
         zIndex: 1110,
         
       }}
@@ -69,7 +69,7 @@ const AppThemeSetting = () => {
       sx={{
         position: 'fixed',
         left: 0,
-        bottom: { xs: 85, xl: 90 },
+        bottom: { xs: 50, xl: 90 },
         zIndex: 1110,
         
       }}

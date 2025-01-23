@@ -19,7 +19,7 @@ import Countup from "../home/Countup";
 
 function ResponsiveAppBar() {
 
-    const contactno1 = " 9890840340";
+    const contactno1 = "9820097046";
     
 
     const textVariants = {
@@ -90,8 +90,7 @@ function ResponsiveAppBar() {
 
                                 <Link href={`tel:${contactno1}`} target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white', marginRight: 10 }}>
-                                    9890840340
-
+                                    9820097046
                                     </a>
                                 </Link>
 
@@ -106,10 +105,9 @@ function ResponsiveAppBar() {
                                     <EmailTwoToneIcon />{" "}
                                 </IconButton>
                                 <Link
-                                    href={`mailto:${'shape32aligners@gmail.com'}`} target="_blank">
+                                    href={`mailto:${'smilesolutions99@gmail.com'}`} target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white' }}>
-                                    shape32aligners@gmail.com
-
+                                    smilesolutions99@gmail.com
                                     </a>
                                 </Link>
                             </Box>
@@ -131,7 +129,7 @@ function ResponsiveAppBar() {
                             <IconButton aria-label="facebook">
                                 {" "}
                                 <a
-                                    href="https://www.facebook.com/abbaddentalclinicnashik/"
+                                    href="https://www.facebook.com/smilesolutionsdental/"
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="facebook"
@@ -142,7 +140,7 @@ function ResponsiveAppBar() {
 
                             <IconButton aria-label="instagram">
                                 <a
-                                    href="https://www.instagram.com/sagardombe/"
+                                    href="https://www.instagram.com/smilesolution_15"
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="instagram"
@@ -152,43 +150,6 @@ function ResponsiveAppBar() {
                                     ></InstagramIcon>
                                 </a>
                             </IconButton>
-
-                            <IconButton aria-label="youtube">
-                                <a
-                                    href=" https://www.youtube.com/channel/UCxI-_YXru2XT7vwf2PZC9hg"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    aria-label="youtube"
-                                >
-                                    <YouTubeIcon sx={{ color: "white" }}></YouTubeIcon>
-                                </a>
-                            </IconButton>
-                            {/* <IconButton aria-label="justdial">
-                                <a
-                                    href="https://www.justdial.com/Nashik/Abbad-Dental-Clinic-Implant-Center-Opp-BYK-College-Next-to-Fastrack-Showroom-College-Road/0253PX253-X253-221218231157-S3D4_BZDET"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    aria-label="linkedin"
-                                >
-                                    <Image src="/images/jd.png" width={20} height={20} ></Image>
-
-
-
-                                </a>
-                            </IconButton>
-                            <IconButton aria-label="linktree">
-                                <a
-                                    href="https://linktr.ee/AbbadDentalClinic"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    aria-label="linkedin"
-                                >
-                                    <Image src="/images/icons/linktree.webp" width={20} height={20} ></Image>
-
-
-
-                                </a>
-                            </IconButton> */}
                         </Box>
                     </Box>
                 </Container>

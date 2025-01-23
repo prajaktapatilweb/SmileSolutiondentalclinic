@@ -4,6 +4,8 @@ import { Box, Button, Card, Container, Grid, Hidden, Typography } from '@mui/mat
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTheme, useMediaQuery } from '@mui/material';
+import Heading from './Heading';
+import { headList2 } from '../constants/titlefile';
 
 export default function Dentalservices() {
     var Details = [
@@ -103,14 +105,16 @@ const containerVariants = {
 
     return (
         <div>
-            <Box
-                id="treatments"
-                sx={{ pt: { xs: 10, md: 7 }, pb: 10}}
-            >
-                <div class="section-title">
-                    <h3>The Art of Luxurious Dentistry</h3>
-                    <p>Unparalleled Care for Those Who Expect the Best</p>
-                </div>
+                <section  id="treatments"
+  style={{
+    position: "relative",
+    background: "linear-gradient(to top, #e0e6f4, #e0e6f4)",
+    overflow: "hidden",
+    paddingBottom: "150px", // Ensures content stays above the wave
+  }}
+>
+            <Box sx={{ paddingTop: "50px" }}>
+              <Heading data={headList2} />
              {/* Framer Motion Container for the animation */}
         <Container component={motion.div} variants={containerVariants} initial="hidden" animate="visible">
          
@@ -133,10 +137,10 @@ const containerVariants = {
                   fontFamily: '"Poppins", sans-serif',
                   width: '100%',
                   height: '100%',
-                borderRadius:7,
-                  boxShadow:
-                    'rgba(100, 50, 93, 0.25) 0px 50px 60px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 1px -2px 3px 1px inset',
-                  '&:hover': {
+                  border:'1px solid lightgrey',
+                  boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+                borderRadius:5,
+                      '&:hover': {
                     backgroundColor: 'primary.light',
                     color: 'white',
                     '& .MuiAvatar-root': {
@@ -202,6 +206,29 @@ const containerVariants = {
       </Grid>
                 </Container >
             </Box>
+
+               {/* Wave Section */}
+  <div style={{ position: "absolute", bottom: 0, left: 0, width: "100%", height: "150px" }}>
+ 
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 2550 450"
+      preserveAspectRatio="none" /* Ensures scaling fits the container */
+      style={{
+        display: "block",
+        width: "100%",
+        height: "100%", // Height of the wave
+      }}
+    >
+      <path
+        fill="#ffffff"
+        fillOpacity="1"
+        d="M0,294L120,269.5C240,245,480,196,720,155.2C960,114,1200,82,1440,122.5C1680,163,1920,278,2160,269.5C2400,261,2640,131,2880,81.7C3120,33,3360,65,3600,130.7C3840,196,4080,294,4320,285.8C4560,278,4800,163,5040,106.2C5280,49,5520,49,5760,57.2C6000,65,6240,82,6480,138.8C6720,196,6960,294,7200,310.3C7440,327,7680,261,7920,212.3C8160,163,8400,131,8640,163.3C8880,196,9120,294,9360,294C9600,294,9840,196,10080,204.2C10320,212,10560,327,10800,359.3C11040,392,11280,343,11520,294C11760,245,12000,196,12240,187.8C12480,180,12720,212,12960,212.3C13200,212,13440,180,13680,187.8C13920,196,14160,245,14400,294C14640,343,14880,392,15120,383.8C15360,376,15600,310,15840,253.2C16080,196,16320,147,16560,130.7C16800,114,17040,131,17160,138.8L17280,147L17280,490L17160,490C17040,490,16800,490,16560,490C16320,490,16080,490,15840,490C15600,490,15360,490,15120,490C14880,490,14640,490,14400,490C14160,490,13920,490,13680,490C13440,490,13200,490,12960,490C12720,490,12480,490,12240,490C12000,490,11760,490,11520,490C11280,490,11040,490,10800,490C10560,490,10320,490,10080,490C9840,490,9600,490,9360,490C9120,490,8880,490,8640,490C8400,490,8160,490,7920,490C7680,490,7440,490,7200,490C6960,490,6720,490,6480,490C6240,490,6000,490,5760,490C5520,490,5280,490,5040,490C4800,490,4560,490,4320,490C4080,490,3840,490,3600,490C3360,490,3120,490,2880,490C2640,490,2400,490,2160,490C1920,490,1680,490,1440,490C1200,490,960,490,720,490C480,490,240,490,120,490L0,490Z"
+      ></path>
+    </svg>
+    
+  </div>
+            </section>
         </div >
     )
 }

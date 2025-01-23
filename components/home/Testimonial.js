@@ -17,9 +17,9 @@ const SliderArrow = (props) => {
         <IconButton
             sx={{
                 backgroundColor: "background.paper",
-                color: "primary.dark",
+                color: "primary.light",
                 "&:hover": {
-                    backgroundColor: "primary.dark",
+                    backgroundColor: "primary.light",
                     color: "primary.contrastText",
                 },
                 bottom: "-28px !important",
@@ -49,7 +49,7 @@ const StyledDots = styled("ul")(({ theme }) => ({
         "& li": {
             marginRight: theme.spacing(2),
             "&.slick-active>div": {
-                backgroundColor: theme.palette.primary.dark,
+                backgroundColor: theme.palette.primary.light,
             },
         },
     },
@@ -83,7 +83,8 @@ const Testimonial = () => {
         <Box
             id="testimonials"
             sx={{
-                py: { xs: 5, md: 7 },
+                py: { xs: 5, md: 8 },
+                backgroundColor:'white'
             }}
         >
             <Container>
@@ -93,7 +94,7 @@ const Testimonial = () => {
                         <MentorCardItem key={String(item.id)} item={item} />
                     ))}
                 </Slider>
-
+<br></br>
 
             </Container>
         </Box>

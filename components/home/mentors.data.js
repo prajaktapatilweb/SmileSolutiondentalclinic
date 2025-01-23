@@ -5,58 +5,40 @@ export const data = [
 
         id: 1,
         photo: '/images/mentors/testis1.jpeg',
-        name: 'Supriya Sanghavi',
+        name: 'Shruti Tailor',
         category: '',
-        description: 'I visited Dr. Leena Abbad for my dental treatment. It was a completely painless procedure where in she took all the required precautions every time..  Very good service, hygiene and helpful staff. I would highly recommend it to everyone.',
+        description: 'Excellent dental care! The clinic was clean, the staff were friendly, and doctor was highly professional. Got my tooth extracted and a couple of tooth fillings. I was anxious but Dr.Heeral explained me the entire procedure clearly and ensured my comfort throughout the treatment. Very happy with the overall experience.',
 
     },
     {
 
         id: 2,
         photo: '/images/mentors/testis2.jpeg',
-        name: 'Pallavi Birhade',
+        name: 'Ishan Mehta',
         category: '',
-        description: 'It was great experience in terms of diagnosis and treatment. Dr. Nikhil helped me to understand the cause and possible consequences and how the treatment will avoid future issues. This was great help and even the entire staff and doctors team is very supportive and helpful.',
+        description: 'Always a great experience. I requested Dr. Heeral to get my dental issues sorted out soon as I was travelling out of Mumbai & she was very prompt & finished my treatment within three visits without any hassle. It was a painless & comfortable experience. Best thing is, I never had to wait for my turn. Clinic is well equipped & the staff is good too. Clinic is also centrally located in Borivali.',
 
     },
     {
 
         id: 3,
-        photo: '/images/mentors/testis4.jpeg',
-        name: 'Vaishnavi Patil',
+        photo: '/images/mentors/testis3.jpeg',
+        name: 'Mahendra Kamdar ',
         category: ' ',
-        description: 'I highly recommend. He is so far the best dentist I have been to. Dr explains each and every procedure properly , he will clear all your doubts and give you the best solution and the work is perfect.',
+        description: 'Quality advise, patience and accuracy highly adorable. Most trustworthy medical support for perfect satisfaction of every patient.',
 
     },
     {
 
         id: 4,
-        photo: '/images/mentors/testis3.jpeg',
-        name: 'Vibhavari Khadke',
+        photo: '/images/mentors/testis4.jpeg',
+        name: 'Kirtikala Kamdar',
         category: '',
-        description: 'My mother in law is such a delicate and sensitive person, and Dr. Nikhil Abbad  is not only an Excellent Doctor, he is simple, superb Human being, Sober, approachable, a Great Social Worker, friendly approach with a smiling face with his selfless service. He is an extraordinarily intelligent Doctor with human values. He always gives genuine advice , I hardly find such a  personality. Our best wishes are always with you sir...',
+        description: 'Dr. Heeral is a very good professional doctor. Put us at ease n explained all the procedure. It was removal of 4 wisdom teeth and it was done without any hassle, perfectly.',
 
     },
 
  
-    {
-
-        id: 5,
-        photo: '/images/mentors/testis5.jpeg',
-        name: 'Rajesh Surana',
-        category: ' ',
-        description: 'It was a great experience. I came from Pune to get a proper treatment with expertise and care as I’m diabetic and Dr Nikhil Abbad proved that he is truly an expert in his profession. He is a patient caring person. His first priority is patient’s comfort and satisfaction. I strongly recommend him for a complete dental care for a person of any age. His staff and team is also very cooperative and supportive. Impressed with post operative follow-ups taken by his team.',
-
-    },
-    {
-
-        id: 6,
-        photo: '/images/mentors/testis6.jpeg',
-        name: 'ASHUTOSH JAIN',
-        category: ' ',
-        description:'I had the pleasure of taking my mother to one of the best dental clinics in Nashik, and I must say it was an excellent experience. The doctor was highly professional and qualified, and we were referred to this clinic by my cousin. From the very first day of the treatment to the post-treatment care, everything was handled with utmost precision and care. The staff was courteous, and their genuine care for patients was evident throughout. I will definitely recommend this clinic to everyone seeking top-notch dental care.'
-
-    },
    
 ];
 
