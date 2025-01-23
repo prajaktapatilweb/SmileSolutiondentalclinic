@@ -53,7 +53,7 @@ function ResponsiveAppBar() {
         <AppBar
             position="static"
             sx={{
-                backgroundImage: { xs: `linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4)), url("/images/nashikclinic/clinics9.webp")`, sm: `linear-gradient(rgba(1, 1, 1, 0.2), rgba(256, 256, 256, 0.2)), url("/images/nashikclinic/clinics9.webp")`, md:` url('/images/headerback1.jpg')`},
+                backgroundImage: { xs: `linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4)), url("/images/clinic/clinic2.jpg")`, sm: `linear-gradient(rgba(1, 1, 1, 0.2), rgba(256, 256, 256, 0.2)), url("/images/clinic/clinics4.webp")`, md:` url('/images/headerback1.jpg')`},
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition:'center',
@@ -173,7 +173,7 @@ function ResponsiveAppBar() {
                     justifyContent="center"
                     textAlign="left"
                 >
-                    <Grid item xs={12} md={8} sx={{backgroundColor:'white',borderTopRightRadius:{xs:2,sm:50,md:50},borderBottomRightRadius:50,mx: {xs:2,sm:3,md:0}, px: {xs:2,sm:3,md:7},py:0, mt: { xs: -1, sm: -5, md: 6 } }}>
+                    <Grid item xs={12} md={8} sx={{backgroundColor:'white',borderTopRightRadius:{xs:2,sm:50,md:50},borderBottomRightRadius:{xs:2,sm:50,md:50},mx: {xs:0,sm:5,md:0}, px: {xs:2,sm:3,md:7},py:0, mt: { xs: -1, sm: -5, md: 6 } }}>
                         <motion.div className="textcontainer" variants={textVariants}
                             initial="initial"
                             animate="animate"

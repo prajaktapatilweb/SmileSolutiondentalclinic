@@ -73,7 +73,7 @@ const DrHeeral  = () => {
                 width={100}
                 height={100}
                layout="responsive"
-               style={{borderBottomRightRadius:70,border:'1px solid white',boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset',}}
+               style={{borderBottomRightRadius:70,border:'1px solid white',boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset'}}
                
               />
               </Box>
@@ -101,7 +101,7 @@ const DrHeeral  = () => {
 px:2
                   }}
                 >
-                 <Typography variant="h3" sx={{color:'primary.dark',fontWeight:500,borderLeft:'4px solid #01a6a2',lineHeight:1.5,paddingLeft: '10px',}}>Dr. Heeral Chikhal</Typography>
+                 <Typography variant="h3" sx={{color:'primary.dark',fontWeight:500,borderLeft:'4px solid #01a6a2',lineHeight:1.5,paddingLeft: '10px',mt:{xs:5,sm:1,md:0}}}>Dr. Heeral Chikhal</Typography>
                   <Typography variant="h5" sx={{color:'primary.light',fontWeight:600, paddingLeft: '15px',}}>  MDS - Prosthodontist & Implantologist</Typography>
                  <br></br>
                   <Typography>
@@ -141,7 +141,7 @@ Government Dental College Alumni, Mumbai<br/>
 
                   }}
                 >
-                    <Typography variant="h3" sx={{color:'primary.dark',fontWeight:500,borderLeft:'4px solid #01a6a2',lineHeight:1.5,paddingLeft: '10px'}}>Dr. Kalpesh Dey</Typography>
+                    <Typography variant="h3" sx={{color:'primary.dark',fontWeight:500,borderLeft:'4px solid #01a6a2',lineHeight:1.5,paddingLeft: '10px',mt:{xs:5,sm:1,md:0}}}>Dr. Kalpesh Dey</Typography>
                   <Typography variant="h5" sx={{color:'primary.light',fontWeight:600,paddingLeft:'15px'}}> MDS - Endodontist & Cosmetic Dentist</Typography>
                  <br></br>
                   <Typography>
