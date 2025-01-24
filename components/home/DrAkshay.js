@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import { motion } from 'framer-motion';
 import Heading from "./Heading";
 import { headList3, headList9 } from "../constants/titlefile";
+import StarIcon from "@mui/icons-material/Star";
 
 
 
@@ -102,14 +103,40 @@ px:2
                   }}
                 >
                  <Typography variant="h3" sx={{color:'primary.dark',fontWeight:500,borderLeft:'4px solid #01a6a2',lineHeight:1.5,paddingLeft: '10px',mt:{xs:5,sm:1,md:0}}}>Dr. Heeral Chikhal</Typography>
-                  <Typography variant="h5" sx={{color:'primary.light',fontWeight:600, paddingLeft: '15px',}}>  MDS - Prosthodontist & Implantologist</Typography>
+                  <Typography variant="h5" sx={{color:'primary.light',fontWeight:600, paddingLeft: '15px',textAlign:'left'}}>  MDS - Prosthodontist & Implantologist</Typography>
                  <br></br>
                   <Typography>
                   Dr. Heeral Chikhal is a highly qualified Prosthodontist and Implantologist, recognized as one of the best female dentists in Borivali West, Mumbai. With over 13 years of experience, she specializes in full mouth rehabilitation, veneers, smile designing, implants, dentures, teeth whitening, crowns, and bridges. Dr. Chikhal is dedicated to providing personalized care that meets the unique needs of each patient, utilizing advanced technology and techniques to achieve optimal results.<br></br><br></br>
-MDS in Prosthodontics and Implantology<br/>
-13+ Years of experience<br/>
-Former Assistant Professor at GDC, Mumbai<br/>
-Government Dental College Alumni, Mumbai<br/>
+               
+
+<Typography
+  sx={{
+    color: "gray",
+    fontSize: "1rem",
+    lineHeight: "1.8",
+  }}
+  component="div"
+>
+  <ul style={{ paddingLeft: "0",}}>
+    <li style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+      <StarIcon sx={{ color: "#ffc107", fontSize: "1.2rem", marginRight: "8px" }} />
+      MDS in Prosthodontics and Implantology
+    </li>
+    <li style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+      <StarIcon sx={{ color: "#ffc107", fontSize: "1.2rem", marginRight: "8px" }} />
+      13+ Years of experience
+    </li>
+    <li style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+      <StarIcon sx={{ color: "#ffc107", fontSize: "1.2rem", marginRight: "8px" }} />
+      Former Assistant Professor at GDC, Mumbai
+    </li>
+    <li style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+      <StarIcon sx={{ color: "#ffc107", fontSize: "1.2rem", marginRight: "8px" }} />
+      Government Dental College Alumni, Mumbai
+    </li>
+  </ul>
+</Typography>
+
 
                    </Typography>
 
@@ -147,10 +174,33 @@ Government Dental College Alumni, Mumbai<br/>
                   <Typography>
                  
                   Dr. Kalpesh Dey is an accomplished Endodontist and Cosmetic Dentist, known as a leading dentist in Borivali West. He specializes in root canal treatments, single sitting root canals, and aesthetic enhancements. With a strong focus on patient comfort, Dr. Dey ensures high-quality dental care for all his patients.<br/><br/>
-MDS in Endodontics and Cosmetic Dentistry<br/>
-13+ Years of experience<br/>
-Former Assistant Professor at GDC, Mumbai<br/>
-Government Dental College Alumni, Mumbai<br/>
+                  <Typography
+  sx={{
+    color: "gray",
+    fontSize: "1rem",
+    lineHeight: "1.8",
+  }}
+  component="div"
+>
+  <ul style={{ paddingLeft: "0" }}>
+    <li style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+      <StarIcon sx={{ color: "#ffc107", fontSize: "1.2rem", marginRight: "8px" }} />
+      MDS in Endodontics and Cosmetic Dentistry
+    </li>
+    <li style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+      <StarIcon sx={{ color: "#ffc107", fontSize: "1.2rem", marginRight: "8px" }} />
+      13+ Years of experience
+    </li>
+    <li style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+      <StarIcon sx={{ color: "#ffc107", fontSize: "1.2rem", marginRight: "8px" }} />
+      Former Assistant Professor at GDC, Mumbai
+    </li>
+    <li style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+      <StarIcon sx={{ color: "#ffc107", fontSize: "1.2rem", marginRight: "8px" }} />
+      Government Dental College Alumni, Mumbai
+    </li>
+  </ul>
+</Typography>
 
                    </Typography>
 
@@ -161,7 +211,7 @@ Government Dental College Alumni, Mumbai<br/>
               
             </motion.div>
           </Grid>
-          <Grid item xs={12} sm={5} sx={{px:{xs:2,sm:0,md:5}}} order={{xs:0,md:1}}>
+          <Grid item xs={12} sm={5} sx={{px:{xs:2,sm:0,md:5} ,pb:{xs:0,sm:0,md:9}}} order={{xs:0,md:1}}>
             {/* Framer Motion div with whileInView to trigger zoom and position shift */}
             <motion.div
               initial={{ scale: 0.3, y: 0 }} // Start with normal scale and no shift

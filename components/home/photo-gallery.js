@@ -87,6 +87,7 @@ const fadeUpVariants = {
     overflow: "hidden",
     paddingTop: "50px", // Ensures content stays below the wave
     paddingBottom: "50px",
+    marginTop:'-120px'
   }}
 >
   {/* Wave Section */}

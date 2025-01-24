@@ -6,7 +6,7 @@ const MentorCardItem = ({ item }) => {
   const toggleReadMore = () => setIsReadMore(!isReadMore);
 
   const description = item.description ? String(item.description) : "";
-  const truncatedText = description.slice(0, 230); // First 230 characters
+  const truncatedText = description.slice(0, 130); // First 230 characters
 
   return (
     <div className="mentor-card">

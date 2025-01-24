@@ -94,7 +94,7 @@ const Contact = () => {
       viewport={{ once: true }} // Optionally only animate once
     >
           <Grid container spacing={2} alignItems='center' justifyContent='center'>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} order={{xs:1,md:0}}>
               <Grid container spacing={2}>
                 <Grid item xs={12} md={12}>
                 <div class="info-box mt-4">  
@@ -131,7 +131,7 @@ const Contact = () => {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={6} order={{xs:0,md:1}}>
               <Card sx={{ px: 3, py: 4,boxShadow: 'rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset'  }}>
                 <Formik
                   validateOnChange={true}

@@ -4,10 +4,10 @@ export const data = [
     {
 
         id: 1,
-        photo: '/images/mentors/testis1.jpeg',
-        name: 'Shruti Tailor',
+        photo: '/images/mentors/testis4.jpeg',
+        name: 'Kirtikala Kamdar',
         category: '',
-        description: 'Excellent dental care! The clinic was clean, the staff were friendly, and doctor was highly professional. Got my tooth extracted and a couple of tooth fillings. I was anxious but Dr.Heeral explained me the entire procedure clearly and ensured my comfort throughout the treatment. Very happy with the overall experience.',
+        description: 'Dr. Heeral is a very good professional doctor. Put us at ease n explained all the procedure. It was removal of 4 wisdom teeth and it was done without any hassle, perfectly.',
 
     },
     {
@@ -28,17 +28,17 @@ export const data = [
         description: 'Quality advise, patience and accuracy highly adorable. Most trustworthy medical support for perfect satisfaction of every patient.',
 
     },
+  
+
     {
 
         id: 4,
-        photo: '/images/mentors/testis4.jpeg',
-        name: 'Kirtikala Kamdar',
+        photo: '/images/mentors/testis1.jpeg',
+        name: 'Shruti Tailor',
         category: '',
-        description: 'Dr. Heeral is a very good professional doctor. Put us at ease n explained all the procedure. It was removal of 4 wisdom teeth and it was done without any hassle, perfectly.',
+        description: 'Excellent dental care! The clinic was clean, the staff were friendly, and doctor was highly professional. Got my tooth extracted and a couple of tooth fillings. I was anxious but Dr.Heeral explained me the entire procedure clearly and ensured my comfort throughout the treatment. Very happy with the overall experience.',
 
     },
-
- 
    
 ];
 

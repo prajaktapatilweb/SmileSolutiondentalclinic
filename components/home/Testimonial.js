@@ -22,7 +22,7 @@ const SliderArrow = (props) => {
                     backgroundColor: "primary.light",
                     color: "primary.contrastText",
                 },
-                bottom: "-28px !important",
+                bottom: "-38px !important",
                 left: "unset !important",
                 right: type === "prev" ? "60px !important" : "0 !important",
                 zIndex: 10,
