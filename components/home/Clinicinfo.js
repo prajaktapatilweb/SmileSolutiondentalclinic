@@ -3,8 +3,6 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
 import Drgallery from "./Drgallery";
-import Heading from "./Heading";
-import { headList1 } from "../constants/titlefile";
 import { Box } from "@mui/material";
 
 const fadeUpVariants = {
@@ -37,20 +35,21 @@ const Clinicinfo = () => {
     <Box
       id="aboutus"
       sx={{
-        py: 5,
+        py: 10,
         backgroundColor:'white',
       }}
     >
-      <Grid container spacing={0} alignItems="center" justifyContent="center">
-        {/* Left Side - Gallery */}
         <Grid
-          item
-          xs={12}
-          md={6}
-          sx={{ py: 3 }}
-          alignItems="center"
-          justifyContent="center"
+          container
+          spacing={0}
         >
+        {/* Left Side - Gallery */}
+                 {/* Left Side - Gallery */}
+                 <Grid
+            item
+            xs={12}
+            md={6}
+          >
           <motion.div
             variants={fadeLeftVariants}
             initial="hidden"
@@ -67,9 +66,7 @@ const Clinicinfo = () => {
           xs={12}
           md={6}
           textAlign="justify"
-          sx={{ px: { xs: 3, sm: 3, md: 5 } }}
-          alignItems="center"
-          justifyContent="center"
+          sx={{ px: { xs: 3, sm: 3, md: 2 } ,mt:{xs:3,sm:4,md:1}}}
         >
           <motion.div
             className="textcontainer"
@@ -105,7 +102,7 @@ const Clinicinfo = () => {
               Serving our community since 2014 with pride.
             </Typography>
 
-            <Typography sx={{ mt: 2, color: "#333" }}>
+            <Typography sx={{ mt: 2, color: "#333"}}>
               Smile Solutions Advanced Dental Care and Implant Centre, a premier
               dental clinic in Borivali West, is dedicated to providing top-tier
               dental care tailored to meet the unique needs of each patient.
@@ -122,6 +119,17 @@ const Clinicinfo = () => {
               Smile Solutions, you can expect a welcoming environment where
               your smile is the top priority. Experience the difference in
               dental care today!
+
+              <br/> <br/>
+              <span sx={{lineHeight:1.6 }}>
+<b>Pain-Free Dentistry:</b> We offer gentle, stress-free treatments designed for all ages, ensuring a comfortable experience.<br/>
+<b>Convenient Hours:</b>  Extended and weekend appointments.<br/>
+<b>Family-Friendly:</b>  We provide a full range of dental services suitable for every family member, from children to seniors.<br/>
+<b>Transparent Costs: </b> Enjoy clear cost estimates with no hidden fees, allowing you to plan your dental care without surprises.<br/>
+<b>Eco-Friendly Practices:</b>Our commitment to sustainability includes digital records and recyclable materials, promoting a healthier planet.
+<br/>
+<b>Custom Smiles:</b> We specialize in customized cosmetic services that enhance your unique smile, delivering stunning results tailored to your preferences.<br/>
+</span>
             </Typography>
           </motion.div>
         </Grid>

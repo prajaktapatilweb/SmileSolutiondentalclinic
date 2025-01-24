@@ -156,7 +156,9 @@ export default function Navbar(props) {
                             </IconButton>
                         )}
                         <Box sx={{flexGrow:1,textAlign:{xs:'right',sm:'right',md:'left',lg:'left'}}}>
- <Image src="/images/logosmile1.png" width={130} height={80} style={{filter:'drop-shadow(0px 1px 0px lightgrey)'}}></Image>
+                            <a href="/">
+ <Image src="/images/logosmile1.png" width={130} height={80} style={{filter:'drop-shadow(0px 1px 0px lightgrey)',cursor:'pointer'}}></Image>
+ </a>
  </Box>
                         {/* <Typography
                             variant="h6"
