@@ -180,7 +180,7 @@ function ResponsiveAppBar() {
                         >
                             <Box sx={{
                                 position: "relative",
-                                fontSize: { xs: '26px', sm: '30px', md: '36px' },
+                                fontSize: { xs: '24px', sm: '30px', md: '36px' },
                                 letterSpacing: 1.5,
 
                                 color: "black",
