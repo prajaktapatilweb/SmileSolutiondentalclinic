@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
 import Drgallery from "./Drgallery";
 import { Box } from "@mui/material";
+import { detailspointer } from "./feature.data";
 
 const fadeUpVariants = {
   hidden: { opacity: 0, y: 100 },
@@ -36,20 +37,20 @@ const Clinicinfo = () => {
       id="aboutus"
       sx={{
         py: 10,
-        backgroundColor:'white',
+        backgroundColor: 'white',
       }}
     >
-        <Grid
-          container
-          spacing={0}
-        >
+      <Grid
+        container
+        spacing={0}
+      >
         {/* Left Side - Gallery */}
-                 {/* Left Side - Gallery */}
-                 <Grid
-            item
-            xs={12}
-            md={6}
-          >
+        {/* Left Side - Gallery */}
+        <Grid
+          item
+          xs={12}
+          md={6}
+        >
           <motion.div
             variants={fadeLeftVariants}
             initial="hidden"
@@ -66,7 +67,7 @@ const Clinicinfo = () => {
           xs={12}
           md={6}
           textAlign="justify"
-          sx={{ px: { xs: 3, sm: 3, md: 2 } ,mt:{xs:3,sm:4,md:1}}}
+          sx={{ px: { xs: 3, sm: 3, md: 2 }, mt: { xs: 3, sm: 4, md: 1 } }}
         >
           <motion.div
             className="textcontainer"
@@ -102,7 +103,7 @@ const Clinicinfo = () => {
               Serving our community since 2014 with pride.
             </Typography>
 
-            <Typography sx={{ mt: 2, color: "#333"}}>
+            <Typography sx={{ mt: 2, color: "#333" }}>
               Smile Solutions Advanced Dental Care and Implant Centre, a premier
               dental clinic in Borivali West, is dedicated to providing top-tier
               dental care tailored to meet the unique needs of each patient.
@@ -120,16 +121,63 @@ const Clinicinfo = () => {
               your smile is the top priority. Experience the difference in
               dental care today!
 
-              <br/> <br/>
-              <span sx={{lineHeight:1.6 }}>
-<b>Pain-Free Dentistry:</b> We offer gentle, stress-free treatments designed for all ages, ensuring a comfortable experience.<br/>
-<b>Convenient Hours:</b>  Extended and weekend appointments.<br/>
-<b>Family-Friendly:</b>  We provide a full range of dental services suitable for every family member, from children to seniors.<br/>
-<b>Transparent Costs: </b> Enjoy clear cost estimates with no hidden fees, allowing you to plan your dental care without surprises.<br/>
-<b>Eco-Friendly Practices:</b>Our commitment to sustainability includes digital records and recyclable materials, promoting a healthier planet.
-<br/>
-<b>Custom Smiles:</b> We specialize in customized cosmetic services that enhance your unique smile, delivering stunning results tailored to your preferences.<br/>
-</span>
+              <br /> <br />
+
+
+              <Grid container spacing={2}>
+                {detailspointer.map(({ title, description, icon }, index) => (
+                  <Grid key={String(index)} item xs={12} md={6}>
+                    <Box
+                      sx={{
+                        px: 2,
+                        pt: 1.2,
+                        boxShadow: 1,
+                        borderRadius: 4,
+                        border: "1px solid #E0E0E0",
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Box
+                        sx={{
+                          mr: 1,
+                          backgroundImage: 'linear-gradient(to right, #2f58b1 0%, #01a6a2 100%)',
+                          // backgroundColor: "primary.main",
+                          borderRadius: "50%",
+                          height: 36,
+                          width: 36,
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          color: "primary.contrastText",
+                          "& svg": {
+                            fontSize: 20,
+                          },
+                        }}
+                      >
+                        {icon}
+                      </Box>
+                      <Box
+                        sx={{ display: "flex", flex: 1, flexDirection: "column" }}
+                      >
+                        <Typography
+                          variant="h5"
+                          sx={{
+                            fontSize: "1rem",
+                            color: "primary.light",
+                          }}
+                        >
+                          {title}
+                        </Typography>
+                        <Typography  sx={{ lineHeight: 1.3, fontSize: '15px', pt: 1, pb: 2 }}>
+                          {description}
+                        </Typography>
+                      </Box>
+                    </Box>
+                  </Grid>
+                ))}
+              </Grid>
+
             </Typography>
           </motion.div>
         </Grid>

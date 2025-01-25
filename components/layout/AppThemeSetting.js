@@ -10,7 +10,7 @@ import ScrollUp from '../home/ScrollUp';
 const AppThemeSetting = () => {
  
 
-  const contactno2 = "+9820097046 ";
+  const contactno2 = "9820097046 ";
 
   return (
     <>    

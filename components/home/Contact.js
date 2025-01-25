@@ -121,9 +121,9 @@ const Contact = () => {
                       <CallTwoToneIcon   className='bx' />
                   
                     <h3>Contact Us</h3>
-                    <Link href={`tel:${contactno1}`} target="_blank" sx={{color:'primary.dark'}}>+919820097046</Link>
+                    <Link href={`tel:${contactno1}`} target="_blank" sx={{color:'primary.dark'}}>9820097046</Link>
                     <br/>
-                    <Link href={`tel:${contactno2}`} target="_blank" sx={{color:'primary.dark'}}>+918169204284</Link>
+                    <Link href={`tel:${contactno2}`} target="_blank" sx={{color:'primary.dark'}}>8169204284</Link>
                     
                     <br/>
                     <Link href={`mailto:${'smilesolutions99@gmail.com'}`} target="_blank" sx={{color:'primary.dark'}}>smilesolutions99@gmail.com</Link>

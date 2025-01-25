@@ -7,15 +7,15 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import BiotechIcon from '@mui/icons-material/Biotech';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
-export const data = [
+export const detailspointer = [
     {
-        title: 'Comprehensive Care:',
-        description: 'Enjoy a full range of dental services for the whole family under one roof.',
+        title: 'Pain-Free Dentistry:',
+        description: 'We offer gentle, stress-free treatments designed for all ages, ensuring a comfortable experience.',
         icon: <VolunteerActivismIcon />,
     },
     {
-        title: 'Advanced Technology:',
-        description: 'A Benefit from state-of-the-art tools and techniques for precise and comfortable treatments.',
+        title: 'Family-Friendly:',
+        description: 'We provide a full range of dental services suitable for every family member, from children to seniors.',
         icon: <BiotechIcon />,
     },
     {
@@ -24,8 +24,8 @@ export const data = [
         icon: <Diversity3Icon />,
     },
     {
-        title: 'Skilled Professionals:',
-        description: 'Trust our highly trained experts to deliver top-notch care using the latest practices and techniques.',
+        title: 'Transparent Costs:',
+        description: 'Enjoy clear cost estimates with no hidden fees, allowing you to plan your dental care without surprises.',
         icon: <AccountCircleIcon />,
     },
 ];

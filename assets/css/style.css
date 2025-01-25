@@ -436,7 +436,7 @@ section {
   
 /*gradient text*/
 .paras {
-  font-size: 35px;
+  font-size: 28px;
   font-family: "ABeeZee, sans-serif";
   font-weight: bold;
   background: linear-gradient(
@@ -453,6 +453,10 @@ section {
 @media screen and (max-width: 600px) {
   .paras {
     font-size: 25px;
+    background: none; /* Removes the gradient background */
+    -webkit-background-clip: unset; /* Disables background clipping */
+    -webkit-text-fill-color: #01a6a2; /* Sets text color to white */
+    color: #01a6a2; /* Fallback for non-webkit browsers */
   }
 }
 .h8 {
@@ -461,7 +465,7 @@ section {
 }
 @media screen and (max-width: 600px) {
   .h8 {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 

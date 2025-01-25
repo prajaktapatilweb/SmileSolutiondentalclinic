@@ -60,14 +60,14 @@ const typography = {
   // Repeat for h4, h5, and h6
 
 h5: {
-    fontSize: '18px',
+    fontSize: '16px',
     lineHeight: headingLineHeight,
-    fontWeight: 500,
+    fontWeight: 600,
     '@media (min-width:600px)': {
-      fontSize: '18px',
+      fontSize: '16px',
     },
     '@media (min-width:960px)': {
-      fontSize: '18px',
+      fontSize: '16px',
     },
   },
   h6: {
@@ -75,10 +75,10 @@ h5: {
     lineHeight: headingLineHeight,
     fontWeight: 500,
     '@media (min-width:600px)': {
-      fontSize: '20px', // Medium screens
+      fontSize: '18px', // Medium screens
     },
     '@media (min-width:960px)': {
-      fontSize: '20px', // Large screens
+      fontSize: '18px', // Large screens
     },
   },
   // Repeat for h4, h5, and h6
