@@ -7,7 +7,7 @@ export default function Thankyou() {
             {/* <HomeHero /> */}
             <Box
                 sx={{
-            backgroundImage:'linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)),url("/images/backthank.webp")',
+            backgroundImage:'linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)),url("/images/headerback3.jpg")',
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                     display: 'flex',
