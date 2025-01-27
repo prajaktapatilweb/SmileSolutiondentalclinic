@@ -120,8 +120,8 @@ const Clinicinfo = () => {
               Smile Solutions, you can expect a welcoming environment where
               your smile is the top priority. Experience the difference in
               dental care today!
-
-              <br /> <br />
+</Typography>
+              <br />
 
 
               <Grid container spacing={2}>
@@ -178,7 +178,7 @@ const Clinicinfo = () => {
                 ))}
               </Grid>
 
-            </Typography>
+        
           </motion.div>
         </Grid>
       </Grid>

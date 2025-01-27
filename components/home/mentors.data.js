@@ -23,13 +23,11 @@ export const data = [
 
         id: 3,
         photo: '/images/mentors/testis3.jpeg',
-        name: 'Mahendra Kamdar ',
+        name: 'Meeta Kaushik',
         category: ' ',
-        description: 'Quality advise, patience and accuracy highly adorable. Most trustworthy medical support for perfect satisfaction of every patient.',
+        description: 'A very touching experience from Dr. Heeral and Dr. Dey and the entire team. Highly recommendable for any dental treatment and surgery. A place which is more than just a dental clinic. Visit it and feel the experience with the team...',
 
     },
-  
-
     {
 
         id: 4,
@@ -39,74 +37,33 @@ export const data = [
         description: 'Excellent dental care! The clinic was clean, the staff were friendly, and doctor was highly professional. Got my tooth extracted and a couple of tooth fillings. I was anxious but Dr.Heeral explained me the entire procedure clearly and ensured my comfort throughout the treatment. Very happy with the overall experience.',
 
     },
+    {
+
+        id: 5,
+        photo: '/images/mentors/testi5.jpeg',
+        name: 'Rekha Pandya',
+        category: '',
+        description: 'Highly recommend Smile Solutions Advanced Dental Care Clinic for any and all dental issues.. I had taken route canal treatment and it was very smooth and successful. Dr Kalpesh and Dr Heeral both are highly expertise and experienced to take care of patients. Both doctors are very kind and humble too.. whenever you have toothache do visit clinic without a single thought and without delay .. last and not least is I found treatment pocket friendly too .. 🎉',
+
+    },    {
+
+        id: 6,
+        photo: '/images/mentors/testi7.jpeg',
+        name: 'Akash Munde',
+        category: '',
+        description: 'Dr. Heeral Chikhal is simply the best! I visited her for a crown replacement, and she was incredibly thorough in her approach. The clinic\'s environment is welcoming, and the staff is very supportive throughout the treatment.',
+
+    },    {
+
+        id: 7,
+        photo: '/images/mentors/testi6.jpeg',
+        name: 'Shivani',
+        category: '',
+        description: 'Searching for a dentist near me led to discovering Dr. Kalpesh Dey, whose clinic came highly recommended for cosmetic dentistry. Upon arrival, the welcoming atmosphere and professionalism of the staff immediately created a sense of comfort. During the consultation, he took the time to listen to concerns and thoroughly explained the veneer placement process. His attention to detail was impressive; he made sure all questions were answered and that every step was clear. As the procedure progressed, his precision and care were evident. Once completed, the transformation was remarkable—resulting in a beautiful smile that felt both natural and confident. This experience has been truly rewarding, making Dr. Dey highly recommended for anyone looking to enhance their smile through cosmetic dentistry!',
+
+    },
+   
    
 ];
 
 
-export const Details = [
-    {
-       img:'/images/associate/dr5.png',
-            title:"Dr. Chetan Ahire ",
-            testpara:"MDS Endodontist - Re Root Canal Specialist",
-post:'Associate Dentist'
-       
-    },
-    {
-        img:'/images/associate/dr6.png',
-        title:"Dr. Sayali Gangurde",
-        testpara:"General Dentistry",
-        post:'Associate Dentist'
-
-      
-
-    },
-    {
-        img:'/images/associate/dr7.png',
-        title:"Dr. Akshada Wagh ",
-        testpara:"General Dentistry",
-        post:'Associate Dentist'
-
-
-    },
-
-    {
-            img:'/images/associate/dr8.png',
-            title:"Dr. Prathmesh Kapoor",
-            testpara:"Oral & Maxillofacial Surgeon",
-            post:'Consultant'
-
-    },
-    {
-        img:'/images/associate/amit.jpg',
-         title:'Dr. Amit Arvind Agrawal',
-        testpara:'Periodontist ',
-           post:'Consultant'
-    },
-    {
-        img:'/images/associate/khushboo.jpg',
-         title:'Dr. Khusboo Patel',
-        testpara:'Pedodontist',
-           post:'Consultant'
-    },
-    {
-        img:'/images/associate/aditi.jpg',
-         title:'Dr. Aditi Bulbule',
-        testpara:'Pediatric Dentist',
-           post:'Consultant'
-       
-    },
-    // {
-    //     img:'/images/associate/saurabh.jpg',
-    //      title:'Dr. Saurabh Malbade',
-    //     testpara:'Orthodontist',
-       
-    // },
-    // {
-    //     img:'/images/associate/nilesh.jpg',
-    //     title: 'Dr. Nilesh Raisoni',
-    //     testpara:'Oral Maxillofacial Surgeon',
-       
-    // }
-
-
-]

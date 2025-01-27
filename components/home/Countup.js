@@ -21,16 +21,9 @@ export default function Countup() {
         },
         {
             startnumber: '1',
-            numbers: '18',
+            numbers: '13',
           title: 'Experience Years',
         },
-        {
-          startnumber: '10',
-          numbers: '26',
-        title: 'Dental Implants',
-      },
-      
-
         {
           startnumber: '0',
           numbers: '4.9',
