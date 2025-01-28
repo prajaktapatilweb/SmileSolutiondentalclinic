@@ -11,7 +11,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
-          <link rel="icon" href="/abad.jpg" />
+          <link rel="icon" href="/titlelogo1.jpg" />
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.background.paper} />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,12 +21,36 @@ class MyDocument extends Document {
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           {this.props.emotionStylesTags}
 
+          <meta property="og:title" content='Dental Clinic in Borivali West' />
+          <meta property="og:site_name" content='Smile Solutions Advanced Dental Care and Implant Centre' />
+          <meta property="og:url" content='https://www.smilesolutionsclinic.com/' />
+          <meta property="og:description" content='Transform your smile with our expert dental care and personalized treatments.' />
+          <meta property="og:type" content='website' />
+          <meta property="og:image" content='https://www.smilesolutionsclinic.com/_next/image?url=%2Fimages%2Fclinic%2Fclinics3.jpg&w=640&q=75' />
 
+
+          {/* Add GTM Script to the Head */}
+          <Script
+            id="smartlook"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-K36CXXN5');
+          `  }}
+          />
 
         </Head>
         <body>
+          {/* <!-- Google Tag Manager (noscript) --> */}
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K36CXXN5"
+            height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe></noscript>
+          {/* <!-- End Google Tag Manager (noscript) --> */}
 
-       
+
           <Main />
           <NextScript />
         </body>
