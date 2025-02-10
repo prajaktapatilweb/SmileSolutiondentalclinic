@@ -2,6 +2,7 @@
 module.exports = {
     siteUrl: 'https://www.smilesolutionsclinic.com/',
     generateRobotsTxt: true, // (optional)
-    generateIndexSitemap: true
+    generateIndexSitemap: false,
+    
     // ...other options
 }
