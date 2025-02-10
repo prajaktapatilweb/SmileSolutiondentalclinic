@@ -26,9 +26,9 @@ export default function Countup() {
         },
         {
           startnumber: '0',
-          numbers: '4.9',
+          numbers: '5',
           title: 'Google Ratings',
-          decimals: 1,
+          // decimals: 1,
         },
       ];
     
