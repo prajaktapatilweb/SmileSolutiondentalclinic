@@ -27,7 +27,8 @@ const Footer = () => {
 
             
               <Typography variant="subtitle1" sx={{ letterSpacing: 1, mb: 2 }}>
-              At Smile Solutions Advanced Dental Care and Implant Centre, we provide exceptional dental care in a welcoming environment, recognized as one of the top dental clinics in Borivali West, Mumbai. Our dedicated team is here to help you achieve a healthy, beautiful smile. Contact us today to schedule your appointment!
+              At Smile Solutions Advanced Dental Care and Implant Centre, we are committed to delivering top-quality dental care in a comfortable and friendly environment. Recognized as a leading dental clinic in Borivali West, Mumbai, our experienced team is dedicated to helping you achieve a healthy and confident smile. Schedule your appointment with us today and experience exceptional care at a trusted dental clinic near me.
+
               </Typography>
             
              

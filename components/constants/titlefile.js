@@ -9,7 +9,7 @@ const headDetails = {
     },
     drinfo: {
         title: 'Meet Dr. Heeral Chikhal & Dr. Kalpesh Dey',
-        subtitle:'Your trusted advocate for optimal dental health.'
+        subtitle:'Expert Dentists in Borivali West for Complete Dental Care'
 
 
     },

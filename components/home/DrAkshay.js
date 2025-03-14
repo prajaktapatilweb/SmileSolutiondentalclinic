@@ -107,11 +107,13 @@ px:2
                  <br></br>
                   <Typography>
                   Dr. Heeral Chikhal is a highly qualified Prosthodontist and Implantologist, recognized as one of the best female dentists in Borivali West, Mumbai. With over 13 years of experience, she specializes in full mouth rehabilitation, veneers, smile designing, implants, dentures, teeth whitening, crowns, and bridges. Dr. Chikhal is dedicated to providing personalized care that meets the unique needs of each patient, utilizing advanced technology and techniques to achieve optimal results.<br></br>
+                  If you're searching for an expert dentist in Borivali West, look no further—Dr. Chikhal is the perfect choice for exceptional dental care.
+
                   </Typography>
 
 <Typography
   sx={{
-    color: "gray",
+    color:'primary.dark',
     fontSize: "1rem",
     lineHeight: "1.5",
   }}
@@ -173,7 +175,8 @@ px:2
                  <br></br>
                   <Typography>
                  
-                  Dr. Kalpesh Dey is an accomplished Endodontist and Cosmetic Dentist, known as a leading dentist in Borivali West. He specializes in root canal treatments, single sitting root canals, and aesthetic enhancements. With a strong focus on patient comfort, Dr. Dey ensures high-quality dental care for all his patients.<br/>
+                  Dr. Kalpesh Dey is an accomplished Endodontist and Cosmetic Dentist, known as a leading dentist in Borivali West. He specializes in root canal treatments, single sitting root canals, and aesthetic enhancements. With a strong focus on patient comfort, Dr. Dey ensures high-quality dental care for all his patients, making him a top choice for those searching for a dentist near me.
+                  <br/>
                   </Typography>
                   <Typography
   sx={{

@@ -83,11 +83,13 @@ const Clinicinfo = () => {
                 borderLeft: "4px solid #01a6a2",
                 paddingLeft: "10px",
                 lineHeight: 1.5,
+                textAlign:'left',
                 color: "#2f58b1",
                 textShadow: "1px 1px 5px rgba(0, 0, 0, 0.1)",
+                fontSize:{xs:20,sm:25,md:28}
               }}
             >
-              A Legacy of Trust and Care
+            Your Trusted Dental Clinic in Borivali West
             </Typography>
 
             <Typography
@@ -100,7 +102,7 @@ const Clinicinfo = () => {
                 paddingLeft: "15px",
               }}
             >
-              Serving our community since 2014 with pride.
+             Providing Exceptional Care for a Healthy, Beautiful Smile
             </Typography>
 
             <Typography sx={{ mt: 2, color: "#333" }}>
@@ -112,14 +114,8 @@ const Clinicinfo = () => {
               treatment protocols to ensure optimal outcomes.
               <br />
               <br />
-              Joining her is Dr. Kalpesh Dey, an MDS Endodontist and Cosmetic
-              Dentist, who specializes in root canal treatments and aesthetic
-              enhancements. Together, they form a dynamic team that prioritizes
-              patient comfort and satisfaction while delivering a wide range of
-              services, from routine check-ups to complex dental implants. At
-              Smile Solutions, you can expect a welcoming environment where
-              your smile is the top priority. Experience the difference in
-              dental care today!
+              Joining her is Dr. Kalpesh Dey, an MDS Endodontist and Cosmetic Dentist, who specializes in root canal treatments and aesthetic enhancements. Together, they form a dynamic team that prioritizes patient comfort and satisfaction while delivering a wide range of services, from routine check-ups to complex dental implants. For those seeking a trusted dentist in Borivali West, Smile Solutions offers exceptional care in a welcoming environment. Experience the difference in dental care today!
+
 </Typography>
               <br />
 

@@ -179,7 +179,7 @@ function ResponsiveAppBar() {
                         xs={12}
                         md={7}
                         sx={{
-                            backgroundColor: {xs:'rgba(0, 0, 0, 0.4)',sm:'white'}, // Black color with 50% transparency
+                            backgroundColor: { xs: 'rgba(0, 0, 0, 0.4)', sm: 'white' }, // Black color with 50% transparency
                             borderTopRightRadius: { xs: 2, sm: 50, md: 50 },
                             borderBottomRightRadius: { xs: 2, sm: 50, md: 50 },
                             mx: { xs: 0, sm: 5, md: 0 },
@@ -197,7 +197,7 @@ function ResponsiveAppBar() {
                                 fontSize: { xs: '24px', sm: '29px', md: '33px' },
                                 letterSpacing: 1.5,
 
-                                color: {xs:'#ffffff',sm:"black"},
+                                color: { xs: '#ffffff', sm: "black" },
                                 lineHeight: 1.2,
                                 mb: -2,
                                 // '-webkit-text-stroke': '1px #28282B',
@@ -205,12 +205,13 @@ function ResponsiveAppBar() {
 
                             }}>
                                 <motion.h2 variants={textVariants} style={{ fontFamily: "Inter, sans-serif", fontWeight: '800', }} >
-
-                                    Transforming Smiles, Changing Lives
-
-
+                                    Transforming Smiles Every Day
                                 </motion.h2>
+
                             </Box>
+                            <motion.h3 variants={textVariants} style={{ fontFamily: "Inter, sans-serif", fontWeight: '400',color:'black',fontSize:'20px' }} >
+                            Top-Rated Dental Clinic in Borivali West
+                                </motion.h3>
                             <Countup />
                             <Box sx={{ "& button": { mt: 3, mb: 7, } }}>
                                 <ScrollLink
