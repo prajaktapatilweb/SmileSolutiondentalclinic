@@ -11,7 +11,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
-          <link rel="icon" href="/titlelogo1.jpg" />
+          <link rel="icon" href="/icologo.jpeg" />
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.background.paper} />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
