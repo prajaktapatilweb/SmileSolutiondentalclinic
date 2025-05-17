@@ -20,13 +20,13 @@ import GoogleRecaptcha from '../GoogleRecaptcha';
 
 
 const All = [
-  { key: 1, text: 'Braces/ aligners', value: 'Braces/ aligners' },
-  { key: 2, text: 'Dental implants', value: 'Dental implants' },
-  { key: 3, text: 'Dental veneers (smile designing)', value: 'Dental veneers (smile designing)' },
-  { key: 4, text: 'Full mouth rehabilitation', value: 'Full mouth rehabilitation' },
-  { key: 5, text: 'Pediatric (kids dentistry)', value: 'Pediatric (kids dentistry)' },
-  { key: 6, text: 'Root canal', value: 'Root canal' },
-  { key: 7, text: 'Wisdom teeth extraction/ Teeth extraction', value: 'Wisdom teeth extraction/ Teeth extraction' },
+  { key: 1, text: 'Braces/Aligners', value: 'Braces/Aligners' },
+  { key: 2, text: 'Dental Implants', value: 'Dental Implants' },
+  { key: 3, text: 'Dental Veneers (Smile Designing)', value: 'Dental Veneers (Smile Designing)' },
+  { key: 4, text: 'Full Mouth Rehabilitation', value: 'Full Mouth Rehabilitation' },
+  { key: 5, text: 'Pediatric (Kids Dentistry)', value: 'Pediatric (Kids Dentistry)' },
+  { key: 6, text: 'Root Canal Treatment', value: 'Root Canal Treatment' },
+  { key: 7, text: 'Teeth Extraction', value: 'Teeth Extraction' },
   { key: 8, text: 'Other', value: 'Other' }
 ];
 
