@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Typography } from '@mui/material'
+import { Box, Hidden, Typography } from '@mui/material'
 
 export default function Heading({ data }) {
     return (
@@ -20,6 +20,7 @@ export default function Heading({ data }) {
                             {item.title}
 
                         </Typography>
+                       <Hidden smDown>
                         <Typography
                             variant="h6"
                             sx={{
@@ -34,6 +35,7 @@ export default function Heading({ data }) {
                             {item.subtitle}
 
                         </Typography>
+                        </Hidden>
                     </Box>
 
                 ))}

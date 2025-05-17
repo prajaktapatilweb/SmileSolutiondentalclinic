@@ -209,9 +209,11 @@ function ResponsiveAppBar() {
                                 </motion.h2>
 
                             </Box>
+                            <Hidden smDown>
                             <motion.h3 variants={textVariants} style={{ fontFamily: "Inter, sans-serif", fontWeight: '400',color:'black',fontSize:'20px' }} >
                             Top-Rated Dental Clinic in Borivali West
                                 </motion.h3>
+                                </Hidden>
                             <Countup />
                             <Box sx={{ "& button": { mt: 3, mb: 7, } }}>
                                 <ScrollLink

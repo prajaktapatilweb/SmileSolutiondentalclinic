@@ -118,7 +118,7 @@ const fadeUpVariants = {
      
       {/* Slider */}
       <Slider {...sliderConfig}>
-        {[...Array(8)].map((_, i) => (
+        {[...Array(12)].map((_, i) => (
           <PhotoCardItem key={i} item={i + 1} />
         ))}
       </Slider>

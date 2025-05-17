@@ -8,8 +8,10 @@ import StarIcon from "@mui/icons-material/Star"; // ✅ Import Star Icon
 export default function Countup() {
   var Details = [
     { startnumber: "1000", numbers: "10600", title: "Happy Smiles" },
+    { startnumber: "1000", numbers: "4500", title: "RCTs Completed" }, 
     { startnumber: "1", numbers: "13", title: "Experience Years" },
-    { startnumber: "0", numbers: "5", title: "Google Ratings" },
+    { startnumber: "0", numbers: "5", title: "Google Rated"},
+
   ];
 
   // Define the fade-up animation variants
@@ -31,7 +33,7 @@ export default function Countup() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <Grid container spacing={0} textAlign="center" sx={{ pt: 2, pb: 7, padding: 0 }}>
+        <Grid container spacing={2} textAlign="center" sx={{ pt: 2, pb: 7, padding: 0 }}>
           {Details.map((item, i) => (
             <Grid item xs={6} sm={3} md={3} key={i}>
               <CountUp
@@ -42,7 +44,7 @@ export default function Countup() {
                 className="paras"
               />{" "}
               {/* ✅ Show Star Icon Only for Google Ratings */}
-              {i === 2 ? (
+              {i === 3 ? (
                 <StarIcon sx={{ color: "gold", fontSize: 24, }} />
               ) : (
                 <span className="paras">+</span>

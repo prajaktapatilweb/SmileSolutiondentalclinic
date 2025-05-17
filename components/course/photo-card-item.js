@@ -20,7 +20,7 @@ const PhotoCardItem = ({ item }) => {
       <Box sx={{ position: "relative", borderRadius: "15px",margin:'5px' }}>
         <Image
           alt="Happy Patients"
-          src={`/images/patients/patient${item}.jpg`}
+          src={`/images/patient/patients${item}.jpg`}
           width={100}
           height={100}
           layout="responsive"

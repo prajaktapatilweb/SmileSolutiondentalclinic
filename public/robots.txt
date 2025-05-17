@@ -1,5 +1,9 @@
+# *
 User-agent: *
+Allow: /
 
-Disallow: 
+# Host
+Host: https://www.smilesolutionsclinic.com/
 
+# Sitemaps
 Sitemap: https://www.smilesolutionsclinic.com/sitemap.xml

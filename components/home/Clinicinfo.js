@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
 import Drgallery from "./Drgallery";
-import { Box } from "@mui/material";
+import { Box, Hidden } from "@mui/material";
 import { detailspointer } from "./feature.data";
 
 const fadeUpVariants = {
@@ -51,6 +51,25 @@ const Clinicinfo = () => {
           xs={12}
           md={6}
         >
+          <Hidden smUp>
+            <Typography
+              variant="h1"
+              sx={{
+                fontWeight: 600,
+                borderLeft: "4px solid #01a6a2",
+                paddingLeft: "10px",
+                lineHeight: 1.5,
+                textAlign:'left',
+                color: "#2f58b1",
+                textShadow: "1px 1px 5px rgba(0, 0, 0, 0.1)",
+                fontSize:{xs:30,sm:25,md:28},
+                
+              }}
+            >
+            Your Trusted Dental Clinic in Borivali West
+            </Typography>
+            <br></br>
+            </Hidden>
           <motion.div
             variants={fadeLeftVariants}
             initial="hidden"
@@ -76,6 +95,7 @@ const Clinicinfo = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
+            <Hidden smDown>
             <Typography
               variant="h1"
               sx={{
@@ -104,7 +124,7 @@ const Clinicinfo = () => {
             >
              Providing Exceptional Care for a Healthy, Beautiful Smile
             </Typography>
-
+            </Hidden>
             <Typography sx={{ mt: 2, color: "#333" }}>
               Smile Solutions Advanced Dental Care and Implant Centre, a premier
               dental clinic in Borivali West, is dedicated to providing top-tier

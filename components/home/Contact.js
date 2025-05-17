@@ -32,7 +32,6 @@ const All = [
 
 const validationSchema = yup.object({
   name: yup.string().required('Name is required'),
-  email: yup.string().email('Please enter valid email ID'),
   mobilenumber: yup
     .string()
     .required('Mobile Number is mandatory')
@@ -138,7 +137,6 @@ const Contact = () => {
                   validateOnChange={true}
                   initialValues={{
                     name: '',
-                    email: '',
                     mobilenumber: '',
                     msg: '',
                     selection: '',
@@ -150,7 +148,7 @@ const Contact = () => {
                   {({ isSubmitting }) => (
                     <Form style={{ textAlign: 'left' }}>
                       <Grid container spacing={2}>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={12}>
                           <AppTextField
                             placeholder='name'
                             name='name'
@@ -164,20 +162,7 @@ const Contact = () => {
                             variant='outlined'
                           />
                         </Grid>
-                        <Grid item xs={12} md={6}>
-                          <AppTextField
-                            placeholder='Email'
-                            name='email'
-                            label='Email ID'
-                            sx={{
-                              width: '100%',
-                              '& .MuiInputBase-input': {
-                                fontSize: 14,
-                              },
-                            }}
-                            variant='outlined'
-                          />
-                        </Grid>
+                       
                         <Grid item xs={12} md={6}>
                           <AppTextField
                             placeholder='Mobile Number'
