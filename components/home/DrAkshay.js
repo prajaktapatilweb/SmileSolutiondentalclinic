@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import Heading from "./Heading";
 import { headList3, headList9 } from "../constants/titlefile";
 import StarIcon from "@mui/icons-material/Star";
+import { StyledButton } from "../styled-button";
 
 
 
@@ -147,6 +148,21 @@ px:2
                 {/* <input type="checkbox" class="check" /> */}
 
               </Box>
+
+              <Box sx={{ "& button": { mr: 2, ml: 4, mt: 3 } }} textAlign='left'>
+              {/* <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350}> */}
+
+              <StyledButton color="primary" size="large" variant="contained">
+                <a
+                  href="https://www.practo.com/mumbai/doctor/heeral-chikhal-dentist"
+                  style={{ color: "white", textDecoration: "none" }}
+                >
+                  {" "}
+                  Book An Appointment{" "}
+                </a>
+              </StyledButton>
+              {/* </ScrollLink> */}
+            </Box>
             </motion.div>
           </Grid>
          
@@ -212,7 +228,20 @@ px:2
 
                 {/* <input type="checkbox" class="check" /> */}
 
-              
+                <Box sx={{ "& button": { mr: 2, ml: 0, mt: 3 } }} textAlign='left'>
+              {/* <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350}> */}
+
+              <StyledButton color="primary" size="large" variant="contained">
+                <a
+                  href="https://www.practo.com/mumbai/doctor/kalpesh-dey-1-dentist"
+                  style={{ color: "white", textDecoration: "none" }}
+                >
+                  {" "}
+                  Book An Appointment{" "}
+                </a>
+              </StyledButton>
+              {/* </ScrollLink> */}
+            </Box>
             </motion.div>
           </Grid>
           <Grid item xs={12} sm={5} sx={{px:{xs:2,sm:0,md:5} ,pb:{xs:0,sm:0,md:9}}} order={{xs:0,md:1}}>
