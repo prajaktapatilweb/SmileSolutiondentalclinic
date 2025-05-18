@@ -13,9 +13,10 @@ import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
 import { Link as ScrollLink } from "react-scroll";
 import { StyledButton } from "../styled-button";
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import Navbar from "./navbar";
-import Countdown from "../home/Countdown";
 import Countup from "../home/Countup";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 function ResponsiveAppBar() {
 
@@ -148,6 +149,46 @@ function ResponsiveAppBar() {
                                     <InstagramIcon
                                         sx={{ color: "white", Width: 30, Height: 30 }}
                                     ></InstagramIcon>
+                                </a>
+                            </IconButton>
+                            <IconButton aria-label="youtube">
+                                <a
+                                    href="https://www.youtube.com/@SmileSolutionsBorivaliWest"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label="youtube"
+                                >
+                                    <YouTubeIcon sx={{ color: "white" }}></YouTubeIcon>
+                                </a>
+                            </IconButton>
+                            <IconButton aria-label="twitter">
+                                <a
+                                    href="https://x.com/SmileSolutionsB"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label="twitter"
+                                >
+                                    <TwitterIcon sx={{ color: "white" }}></TwitterIcon>
+                                </a>
+                            </IconButton>
+                            <IconButton aria-label="locationmapple">
+                                <a
+                                    href="https://www.mappls.com/lh3rnz"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label="locationmapple"
+                                >
+                                    <LocationOnIcon sx={{ color: "white" }}></LocationOnIcon>
+                                </a>
+                            </IconButton>
+                            <IconButton aria-label="justdial">
+                                <a
+                                    href="https://www.justdial.com/Mumbai/Smile-Solutions-Advanced-Dental-Care-And-Implant-Centre-Opp-Veer-Savarkar-Garden-Borivali-West/022PXX22-XX22-220610104828-V9E6_BZDET"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label="justdial"
+                                >
+                                     <Image src="/images/jd.png" width={20} height={20} ></Image>
                                 </a>
                             </IconButton>
                         </Box>
