@@ -5,11 +5,13 @@ import Dentalservices from '../components/home/Dentalservices';
 import Contact from '../components/home/Contact';
 import Clinicinfo from "../components/home/Clinicinfo";
 import DrHeeral from "../components/home/DrAkshay";
+import Hero from "../components/home/Hero";
 const Testimonial = lazy(() => import('../components/home/Testimonial'))
 
 export default function Home() {
   return (
     <>
+   <Hero/>
       {/* <Countdown /> */}
       <Clinicinfo></Clinicinfo>
       <Dentalservices/>

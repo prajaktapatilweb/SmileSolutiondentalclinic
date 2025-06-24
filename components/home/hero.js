@@ -1,124 +1,125 @@
-import React from 'react'
-import { useState } from 'react'
-import Box from '@mui/material/Box'
-import Grid from '@mui/material/Grid'
-import Container from '@mui/material/Container'
-import Typography from '@mui/material/Typography'
-import { Link as ScrollLink } from 'react-scroll'
-import { StyledButton } from '../styled-button';
-import { PlayArrow } from '@mui/icons-material'
-import Hidden from '@mui/material/Hidden';
-import Contact from './Contact'
-import Herocontact from './Herocontacts'
-import Herocontacts from './Herocontacts'
-import Countdown from './Countdown'
-import Image from 'next/image'
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import { motion } from "framer-motion";
+import { Grid, Hidden, Link, Container } from "@mui/material";
+import { Link as ScrollLink } from "react-scroll";
+import { StyledButton } from "../styled-button";
+import Countup from "../home/Countup";
 
+const MotionTypography = motion(Typography);
 
-const HomeHero = () => {
-  const openInNewTab = (url) => {
-    window.open(url, '_blank', 'noreferrer');
+function Hero() {
+  
+
+  const containerVariants = {
+    initial: { opacity: 0, x: -500 },
+    animate: { opacity: 1, x: 0, transition: { duration: 1, staggerChildren: 0.3 } },
+  };
+
+  const textVariants = {
+    initial: { opacity: 0, x: -100 },
+    animate: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
 
   return (
-    <>
-      <Box  sx={{
-                backgroundImage: `url("/images/hero3.png")`,
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                display: "flex",
-                height: "100%",
-                alignItems: "center",
-                justifyItems: "center",
-            }}>
-                {/* <Container> */}
-                <Grid
-                    container
-                    alignItems="center"
-                    justifyContent="center"
-                    textAlign="center"
+    <Box
+     
+      sx={{
+        backgroundImage: {
+          xs: `linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4)), url("/images/clinic/clinic2.jpg")`,
+          sm: `linear-gradient(rgba(1, 1, 1, 0.2), rgba(256, 256, 256, 0.2)), url("/images/headerback4.jpg")`,
+          md: `url('/images/headerback4.jpg')`,
+        },
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "bottom",
+        py:9,
+       
+      }}
+    >
+    
+     
+
+      {/* Hero Content */}
+      <Box>
+        <Grid container>
+          <Grid
+            item xs={12} md={7}
+            sx={{
+              backgroundColor: { xs: 'rgba(0, 0, 0, 0.4)', sm: 'white' },
+              borderTopRightRadius: { xs: 2, sm: 50 },
+              borderBottomRightRadius: { xs: 2, sm: 48 },
+            //   mx: { xs: 0, sm: 5 },
+              px: { xs: 2, sm: 4, md: 7 },
+              py: { xs: 2, sm: 0 },
+              mt: { xs: 0, sm: -1, md: 7 },
+            }}
+          >
+            <motion.div
+              initial="initial"
+              animate="animate"
+              variants={containerVariants}
+            >
+              <MotionTypography
+  variants={textVariants}
+  sx={{
+    fontFamily: "Inter, sans-serif",
+    fontWeight: '800',
+    fontSize: { xs: '36px', sm: '50px' }, // Responsive font size
+    letterSpacing: 1.5,
+    lineHeight: 1.2,
+    color: { xs: '#ffffff', sm: "black" },
+    marginBottom: 1,
+    mt:5
+  }}
+>
+  Transforming Smiles Every Day
+</MotionTypography>
+
+              <Hidden smDown>
+                <motion.h3
+                  variants={textVariants}
+                  style={{
+                    fontFamily: "Inter, sans-serif",
+                    fontWeight: '400',
+                    color: 'black',
+                    fontSize: '20px'
+                  }}
                 >
-                    <Grid item xs={12} md={12}>
-                        <Box>
-                            <Typography
-                                variant="p"
-                                sx={{ color: "white", lineHeight: 1.6, fontSize: 23 }}
-                            >
-                                {" "}
-                                Welcome to Dynamic Dental Care
-                            </Typography>
-                            <Typography
-                                component="h2"
-                                sx={{
-                                    // width: { md: 850 },
-                                    position: "relative",
-                                    fontSize: { xs: 35, md: 40, lg: 40 },
-                                    mb: { xs: 3, sm: 2 },
-                                    letterSpacing: 1.5,
-                                    fontWeight: "bold",
-                                    color: "white",
-                                    lineHeight: 1.5,
-                                }}
-                            >
-                                {" "}
-                                Your Journey to Dental Wellness Starts Here!
-                            </Typography>
-                        <Hidden mdDown>
+                  Top-Rated Dental Clinic in Borivali West
+                </motion.h3>
+              </Hidden>
 
-                            <Typography
-                                component="span"
-                                sx={{
-                                    fontSize: "18px",
+              <Countup />
 
-                                    fontWeight: 400,
-                                    position: "relative",
-
-                                    "& svg": {
-                                        position: "absolute",
-                                        top: -7,
-                                        right: -20,
-                                        width: { xs: 22, md: 27 },
-                                        height: "auto",
-                                    },
-                                }}
-                            >
-                               Step into Dynamic Dental Care and Implant Centre, your premier destination for top-tier dental solutions in Airoli, and Thane West.<br></br> Experience personalized care and cutting-edge techniques for radiant smiles.
-                            </Typography>
-                            </Hidden>
-
-                            <Box sx={{ "& button": { mt: 4, mb: 7 } }}>
-                                <ScrollLink
-                                    to="contactform"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={0}
-                                    duration={350}
-                                >
-                                    <StyledButton
-                                        color="white"
-                                        size="large"
-                                        variant="outlined"
-                                        sx={{
-                                            mb: { xs: 3, sm: 0, md: 0 },
-                                            fontSize: 17,
-                                            border: "1px solid",
-                                            borderRadius: 1,
-                                            background:'#70cad2',
-                                            borderColor: "#70cad2",
-                                            color: "#2b337d",
-                                        }}
-                                    >
-                                        Enquire Now
-                                    </StyledButton>
-                                </ScrollLink>
-                            </Box>
-                            <Countdown />
-                        </Box>
-                    </Grid>
-                </Grid>
-                {/* </Container> */}
-            </Box>
-    </>
-  )
+              <Box sx={{ "& button": { mt: 3, mb: 7 } }}>
+                <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350}>
+                  <StyledButton
+                    color="white"
+                    size="large"
+                    variant="outlined"
+                    sx={{
+                      mb: { xs: 3, sm: 0 },
+                      fontSize: 22,
+                      mx: 2,
+                      borderRadius: 2,
+                      backgroundColor: 'primary.light',
+                      fontWeight: 600,
+                      color: "white",
+                    }}
+                  >
+                    Enquire Now
+                  </StyledButton>
+                </ScrollLink>
+              </Box>
+            </motion.div>
+          </Grid>
+          <Grid item xs={12} md={5}></Grid>
+        </Grid>
+      </Box>
+    </Box>
+  );
 }
-export default HomeHero
+
+export default Hero;

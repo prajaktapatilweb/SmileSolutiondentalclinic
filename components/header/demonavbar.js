@@ -51,15 +51,8 @@ function ResponsiveAppBar() {
 
     return (
 
-        <AppBar
-            position="static"
-            sx={{
-                backgroundImage: { xs: `linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4)), url("/images/clinic/clinic2.jpg")`, sm: `linear-gradient(rgba(1, 1, 1, 0.2), rgba(256, 256, 256, 0.2)), url("/images/headerback4.jpg")`, md: ` url('/images/headerback4.jpg')` },
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: 'center',
-
-            }}
+        <AppBar position="static"
+         
         >
             <section style={{
                 background: '#2f58b1', width: '100%', padding: 0, borderRadius: 0,
@@ -206,89 +199,7 @@ function ResponsiveAppBar() {
             }}>
                 <Navbar />
             </section>
-            <Box sx={{ my: { xs: 0, sm: 7, md: 7 } }}>
-                {/* <Container> */}
-                <Grid
-                    container
-                    alignItems="center"
-                    justifyContent="center"
-                    textAlign="left"
-
-                >
-                    <Grid
-                        item
-                        xs={12}
-                        md={7}
-                        sx={{
-                            backgroundColor: { xs: 'rgba(0, 0, 0, 0.4)', sm: 'white' }, // Black color with 50% transparency
-                            borderTopRightRadius: { xs: 2, sm: 50, md: 50 },
-                            borderBottomRightRadius: { xs: 2, sm: 50, md: 50 },
-                            mx: { xs: 0, sm: 5, md: 0 },
-                            px: { xs: 2, sm: 4, md: 7 },
-                            py: { xs: 2, sm: 0 },
-                            mt: { xs: 0, sm: -1, md: 6 },
-                        }}
-                    >
-                        <motion.div className="textcontainer" variants={textVariants}
-                            initial="initial"
-                            animate="animate"
-                        >
-                            <Box sx={{
-                                position: "relative",
-                                fontSize: { xs: '24px', sm: '29px', md: '33px' },
-                                letterSpacing: 1.5,
-
-                                color: { xs: '#ffffff', sm: "black" },
-                                lineHeight: 1.2,
-                                mb: -2,
-                                // '-webkit-text-stroke': '1px #28282B',
-
-
-                            }}>
-                                <motion.h2 variants={textVariants} style={{ fontFamily: "Inter, sans-serif", fontWeight: '800', }} >
-                                    Transforming Smiles Every Day
-                                </motion.h2>
-
-                            </Box>
-                            <Hidden smDown>
-                            <motion.h3 variants={textVariants} style={{ fontFamily: "Inter, sans-serif", fontWeight: '400',color:'black',fontSize:'20px' }} >
-                            Top-Rated Dental Clinic in Borivali West
-                                </motion.h3>
-                                </Hidden>
-                            <Countup />
-                            <Box sx={{ "& button": { mt: 3, mb: 7, } }}>
-                                <ScrollLink
-                                    to="contactform"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={0}
-                                    duration={350}
-                                >
-                                    <StyledButton
-                                        color="white"
-                                        size="large"
-                                        variant="outlined"
-                                        sx={{
-                                            mb: { xs: 3, sm: 0, md: 0 },
-                                            fontSize: 22,
-                                            mx: 2,
-                                            borderRadius: 2,
-                                            backgroundColor: 'primary.light',
-                                            fontWeight: 600,
-                                            color: "white",
-                                        }}
-                                    >
-                                        Enquire Now
-                                    </StyledButton>
-                                </ScrollLink>
-                            </Box>
-                        </motion.div>
-                    </Grid>
-                    <Grid item xs={12} md={5}>
-                    </Grid>
-                </Grid>
-                {/* </Container> */}
-            </Box>
+            
         </AppBar>
     );
 }
