@@ -9,7 +9,7 @@ import Countup from "../home/Countup";
 
 const MotionTypography = motion(Typography);
 
-function Hero() {
+function Herohome() {
   
 
   const containerVariants = {
@@ -122,4 +122,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Herohome;

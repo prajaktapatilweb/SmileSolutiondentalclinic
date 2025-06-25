@@ -24,7 +24,7 @@ export default function Blog() {
               Missing teeth can affect more than just your smile—they can impact your confidence, chewing ability, and even your bone health. Dental implants have emerged as the gold stand <br></br>
               We asked two leading dental experts from Mumbai—Dr. Heeral Chikhal (MDS – Prosthodontics & Implantology) and Dr. Kalpesh Dey (MDS – Endodontics & Cosmetic Dentistry)—to share ...
             </span>,
-            link: '/blogs/top-10-dental-care-tips'
+            link: '/blogs/dental-implants-insights-from-the-experts'
         },
 
     ]
