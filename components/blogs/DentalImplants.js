@@ -1,9 +1,6 @@
 import React from 'react';
 import BlogSection from '../commonblogsec/BlogSection';
 import BlogList from '../commonblogsec/BlogList';
-import BlogTable from '../commonblogsec/BlogTable';
-import BlogStats from '../commonblogsec/BlogStats';
-import BlogFinalNote from '../commonblogsec/BlogFinalNote';
 import { Card, Container, Grid, Typography } from '@mui/material';
 import Implanttable from '../commonblogsec/Implanttable';
 import DentalImplantCostTable from '../commonblogsec/DentalImplantCostTable';
