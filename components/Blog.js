@@ -62,9 +62,11 @@ export default function Blog() {
                 title={item.title}
             />
             <CardContent sx={{ flexGrow: 1 }}>
+            <Link href={item.link} sx={{ textDecoration: 'none' }}>
                 <Typography gutterBottom variant="h5" component="div" sx={{ color: '#20509e' }}>
                     {item.title}
                 </Typography>
+                </Link>
                 <Typography variant="body2" color="text.secondary">
                     {item.para}
                 </Typography>

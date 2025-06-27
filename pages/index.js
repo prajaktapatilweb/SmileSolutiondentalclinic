@@ -6,11 +6,18 @@ import Contact from '../components/home/Contact';
 import Clinicinfo from "../components/home/Clinicinfo";
 import DrHeeral from "../components/home/DrAkshay";
 import Herohome from "../components/home/Herohome";
+import Head from "next/head";
 const Testimonial = lazy(() => import('../components/home/Testimonial'))
 
 export default function Home() {
   return (
     <>
+    <Head>
+    <meta name="title" content="Dentist in Borivali West - Smile Solutions Advanced Dental Care"></meta>
+    <meta name='description' content="Experience exceptional care at our Dental Clinic in Borivali West, offering a range of treatments from routine check-ups to advanced procedures in a comfortable setting. Your smile is our priority!"></meta>
+    <link rel="canonical" href=" https://www.smilesolutionsclinic.com/" />
+    
+    </Head>
    <Herohome/>
       <Clinicinfo></Clinicinfo>
       <Dentalservices/>

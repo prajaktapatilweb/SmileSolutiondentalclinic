@@ -11,9 +11,7 @@ export default function Home() {
 <Head>
                 <title>Smile Brighter: Top 10 Tips for Daily Dental Care </title>
                 <meta name="title" content="Smile Brighter: Top 10 Tips for Daily Dental Care"/>
-                <meta name="description" content=" Discover 10 essential dental care tips for a healthier smile. Learn expert-backed routines, diet do's and don’ts, and oral care advice for all ages." />
-                <meta name="keywords" content="Dental Implants, Dental Care, Oral Health, Dentistry Blog" />
-                
+                <meta name="description" content=" Discover 10 essential dental care tips for a healthier smile. Learn expert-backed routines, diet do's and don’ts, and oral care advice for all ages." />                
                 <link rel="canonical" href="https://www.smilesolutionsclinic.com/blogs/top-10-dental-care-tips"/>
                 <script
                                     type="application/ld+json"

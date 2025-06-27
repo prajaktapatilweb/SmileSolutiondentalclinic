@@ -12,7 +12,6 @@ export default function Home() {
                 <title>Dental Implants Blog - Your Blog Title</title>
                 <meta name="title" content="Are Dental Implants Worth It? Insights from Dr. Heeral Chikhal & Dr. Kalpesh Dey"/>
                 <meta name="description" content="Get expert insights on dental implants from Dr. Heeral Chikhal & Dr. Kalpesh Dey, covering benefits, cost, types, and long-term value." />
-                <meta name="keywords" content="Dental Implants, Dental Care, Oral Health, Dentistry Blog" />
                 
                 <link rel="canonical" href="https://www.smilesolutionsclinic.com/blogs/dental-implants-insights-from-the-experts"/>
                 <script
