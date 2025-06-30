@@ -26,6 +26,13 @@ export default function Blog() {
             </span>,
             link: '/blogs/dental-implants-insights-from-the-experts'
         },
+        {
+            image:'/images/blog/gumdisease.jpg',
+            title: "The Silent Threat: Are You at Risk for Gum Disease? (And What You Can Do About It!)",
+            para: <span>
+           Imagine a silent enemy, one that attacks your health without much warning, slowly but surely causing damage. That's often how gum disease, also known as periodontal disease, works. It's a common health issue that many people don't even realize they have until it's quite advanced. But the good news is, by understanding your risk and taking simple steps, you can protect your smile and your overall health...  </span>,
+            link: '/blogs/gum-disease-risk-causes-prevention-tips'
+        },
 
     ]
     return (
@@ -54,6 +61,7 @@ export default function Blog() {
                     height: 300,
                     borderRadius: 2,
                     transition: 'transform 0.3s',
+                    border:'1px solid lightgrey',
                     '&:hover': {
                         transform: 'scale(1.05)',
                     }
