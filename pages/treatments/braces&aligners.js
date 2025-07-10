@@ -57,7 +57,7 @@ export default function DentalImplants() {
     return (
         <>
             <Head>
-                <title>Braces & Aligners in Borivali West. | Teeth Straightening Near Me</title>
+                <title>Braces & Aligners in Borivali West | Teeth Straightening Near Me</title>
                 <meta name="description" content="Achieve a perfect smile with braces & aligners in Borivali West at Smile Solutions. Our orthodontic experts offer metal, ceramic, & clear aligners with transparent cost of braces & aligners." />
             </Head>
 
