@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+
+import { KeyboardArrowDown } from "@mui/icons-material";
 import {
-    AppBar,
     Toolbar,
     IconButton,
-    Typography,
     Drawer,
     List,
     ListItem,
@@ -16,34 +16,33 @@ import {
     Button,
     Box,
     Stack,
-    Grid,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { ExpandLess, ExpandMore, KeyboardArrowDown, KeyboardArrowRight } from "@mui/icons-material";
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import { useTheme } from "@mui/material/styles";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Link from "next/link";
 import Image from "next/image";
 
-// const  = [
-//   { label: "Products" },
-//   { label: "Pricing" },
-//   { label: "Blog", subGroup: [{ label: "Item1" }, { label: "Item2" }, { label: "Item3" }] },
-//   { label: "Pricing" },
-// ];
 const navItems = [
     { linkID: "/#home", label: "Home" },
     { linkID: "/#aboutus", label: "About Us" },
-    { linkID: "/#treatments", label: "Treatments" },
+    {
+        linkID: "/#treatments",
+        label: "Treatments",
+        subGroup: [
+              { label: "Dental Implants", linkID: "/treatments/dental_implants" },
+            { label: "Root Canal", linkID: "/treatments/root_canal" },
+            { label: "Dental Veneers", linkID: "/treatments/dental_veeners" },
+            { label: "Braces & Aligners", linkID: "/treatments/braces&aligners" },
+        ],
+    },
     { linkID: "/#Doctors", label: "Doctors" },
     { linkID: "/#gallery", label: "Gallery" },
-    // { linkID: "/#awards", label: "Awards" },
     { linkID: "/#testimonials", label: "Testimonials" },
     { linkID: "/blog", label: "Blog" },
     { linkID: "/#contactform", label: "Contact" },
 ];
-
-// const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function HideOnScroll(props) {
     const { children, window } = props;
@@ -62,7 +61,9 @@ export default function Navbar(props) {
     const [openSubMenu, setOpenSubMenu] = useState(false);
     const theme = useTheme();
     const [anchorElNav, setAnchorElNav] = React.useState(null);
+    const [anchorElUser, setAnchorElUser] = React.useState(null);
     const isLargeScreen = useMediaQuery(theme.breakpoints.up("md"));
+
     const toggleDrawer = (open) => () => {
         setOpenDrawer(open);
     };
@@ -72,68 +73,10 @@ export default function Navbar(props) {
     };
 
     const handleCloseNavMenu = () => {
-        setOpenDrawer(false)
+        setOpenDrawer(false);
         setAnchorElNav(null);
     };
-    const renderMenu = (
-        <List
-        // sx={{ width: 250 }}
-        >
-            {navItems.map((item) => (
-                <>
-                    {item?.subGroup ? (
-                        <>
-                            <ListItem button onClick={handleSubMenuClick}>
-                                <ListItemText primary={item.label} />
-                                {openSubMenu ? <ExpandLess /> : <ExpandMore />}
-                            </ListItem>
-                            <Collapse in={openSubMenu} timeout="auto" unmountOnExit>
-                                <List component="div" disablePadding>
-                                    {item?.subGroup.map((item2) => (
-                                        <ListItem button sx={{ pl: 4 }}>
 
-                                            <ListItemText primary={item2.label} />
-                                        </ListItem>
-                                    ))}
-                                </List>
-                            </Collapse>
-                        </>
-                    ) : (
-                        <Link
-
-                            href={item.linkID}
-                            sx={{
-                                fontWeight: 800,
-                                letterSpacing: ".1rem",
-                                color: "black",
-                                textDecoration: "none",
-                                textAlign: "center",
-                            }}
-                        >
-                            <Button
-                                key={item.label}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: "black", display: "block" }}>
-                                {item.label}
-                            </Button>
-                        </Link>
-                        // <ListItem button>
-
-                        //   <ListItemText primary={item.label} />
-
-                        // </ListItem>
-
-                    )}
-                </>
-            ))}
-        </List>
-    );
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
-    const [flag, setFlag] = React.useState(false);
-
-    const handleOpenNavMenu = (event) => {
-        setAnchorElNav(event.currentTarget);
-    };
     const handleOpenUserMenu = (event) => {
         setAnchorElUser(event.currentTarget);
     };
@@ -141,10 +84,95 @@ export default function Navbar(props) {
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
     };
-    const handleOpenMobileSubMenu = () => {
-        // handleCloseNavMenu()
-        setFlag(!flag);
-    };
+
+    const renderMenu = (
+        <List>
+            {navItems.map((item) => (
+                <React.Fragment key={item.label}>
+                   {item?.subGroup ? (
+  <>
+    <ListItem
+      button
+      onClick={handleSubMenuClick}
+      sx={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        fontWeight: 600,
+        color: 'black',
+      }}
+    >
+      <ListItemText
+        primary={item.label}
+        primaryTypographyProps={{
+          fontSize: '1rem',
+          fontWeight: 'bold',
+          letterSpacing : '.1rem',
+        }}
+      />
+      <KeyboardArrowDown
+        style={{
+          transition: "transform 0.3s",
+          transform: openSubMenu ? "rotate(180deg)" : "rotate(0deg)",
+        }}
+      />
+    </ListItem>
+
+    <Collapse in={openSubMenu} timeout="auto" unmountOnExit>
+      <List component="div" disablePadding>
+        {item?.subGroup.map((item2) => (
+          <Link
+            key={item2.label}
+            href={item2.linkID}
+            onClick={handleCloseNavMenu}
+            style={{ textDecoration: "none", color: "inherit", width: "100%" }}
+          >
+            <ListItem
+              button
+              sx={{
+                pl: 6,
+                py: 1,
+                fontSize: "0.95rem",
+                "&:hover": {
+                  backgroundColor: "#f0f0f0",
+                },
+              }}
+            >
+              <ListItemText primary={item2.label} />
+            </ListItem>
+          </Link>
+        ))}
+      </List>
+    </Collapse>
+  </>
+) : (
+  <Link
+    href={item.linkID}
+    style={{
+      fontWeight: 800,
+      letterSpacing: ".1rem",
+      color: "black",
+      textDecoration: "none",
+      textAlign: "center",
+      width: "100%",
+    }}
+  >
+    <ListItem button>
+      <ListItemText
+        primary={item.label}
+        primaryTypographyProps={{
+          fontSize: '1rem',
+          fontWeight: 'bold',
+        }}
+      />
+    </ListItem>
+  </Link>
+)}
+
+                </React.Fragment>
+            ))}
+        </List>
+    );
 
     return (
         <>
@@ -153,56 +181,28 @@ export default function Navbar(props) {
                     <Toolbar>
                         {!isLargeScreen && (
                             <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(true)}>
-                                <MenuIcon  style={{color:'black'}}/>
+                                <MenuIcon style={{ color: "black" }} />
                             </IconButton>
                         )}
-                        <Box sx={{flexGrow:1,textAlign:{xs:'right',sm:'right',md:'left',lg:'left'}}}>
+                        <Box sx={{ flexGrow: 1, textAlign: { xs: "right", sm: "right", md: "left", lg: "left" } }}>
                             <a href="/">
- <Image src="/images/logosmile1.png" width={130} height={80} style={{filter:'drop-shadow(0px 1px 0px lightgrey)',cursor:'pointer'}}></Image>
- </a>
- </Box>
-                        {/* <Typography
-                            variant="h6"
-                            noWrap
-                            component="a"
-                            href="#app-bar-with-responsive-menu"
-                            sx={{
-                                mr: 2,
-                                fontFamily: "monospace",
-                                fontWeight: 700,
-                                letterSpacing: ".3rem",
-                                color: "inherit",
-                                textDecoration: "none",
-                                flexGrow: 1,
-                            }}>
-                            LOGO
-                        </Typography> */}
+                                <Image src="/images/logosmile1.png" width={130} height={80} style={{ filter: "drop-shadow(0px 1px 0px lightgrey)", cursor: "pointer" }} />
+                            </a>
+                        </Box>
                         {isLargeScreen && (
                             <Box sx={{ flexGrow: 0 }}>
-                                <Stack direction="row">
+                                <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
                                     {navItems.map((page) => (
-                                        <>
+                                        <React.Fragment key={page.label}>
                                             {page?.subGroup ? (
                                                 <Box sx={{ flexGrow: 0 }}>
-                                                    <Link
-                                                        key={i}
-                                                        href={page.linkID}
-                                                        sx={{
-                                                            fontWeight: 800,
-                                                            letterSpacing: ".1rem",
-                                                            color: "black",
-                                                            textDecoration: "none",
-                                                            textAlign: "center",
-                                                        }}
+                                                    <Button
+                                                        onClick={handleOpenUserMenu}
+                                                        sx={{ my: 2, color: "#28282B", display: "flex", alignItems: "center", textTransform: "initial", fontSize: "16px", letterSpacing: 1 }}
                                                     >
-                                                        <Button
-                                                            key={page.label}
-                                                            onClick={handleOpenUserMenu}
-                                                            sx={{ my: 2, color: "white", display: "block" }}>
-
-                                                            {page.label}
-                                                        </Button>
-                                                    </Link>
+                                                        {page.label}
+                                                        <KeyboardArrowDown fontSize="small" />
+                                                    </Button>
                                                     <Menu
                                                         sx={{ mt: "45px" }}
                                                         id="menu-appbar"
@@ -217,36 +217,36 @@ export default function Navbar(props) {
                                                             horizontal: "right",
                                                         }}
                                                         open={Boolean(anchorElUser)}
-                                                        onClose={handleCloseUserMenu}>
+                                                        onClose={handleCloseUserMenu}
+                                                    >
                                                         {page?.subGroup.map((setting) => (
-                                                            <MenuItem key={setting.label} onClick={handleCloseUserMenu}>
-                                                                <Typography textAlign="center">{setting.label}</Typography>
-                                                            </MenuItem>
+                                                            <Link key={setting.label} href={setting.linkID} style={{ textDecoration: "none", color: "inherit" }}>
+                                                                <MenuItem onClick={handleCloseUserMenu}>
+                                                                    <span style={{ textAlign: "center" }}>{setting.label}</span>
+                                                                </MenuItem>
+                                                            </Link>
                                                         ))}
                                                     </Menu>
                                                 </Box>
                                             ) : (
-                                                <Link
-
-                                                    href={page.linkID}
-                                                  
-                                                >
+                                                <Link href={page.linkID} style={{ textDecoration: "none" }}>
                                                     <Button
                                                         key={page.label}
                                                         onClick={handleCloseNavMenu}
-                                                        sx={{ mx: 1, color: "#28282B", display: "block",textTransform:'initial',fontSize:'16px',letterSpacing:1 }}>
+                                                        sx={{ color: "#28282B", display: "block", textTransform: "initial", fontSize: "16px", letterSpacing: 1 }}
+                                                    >
                                                         {page.label}
                                                     </Button>
                                                 </Link>
                                             )}
-                                        </>
+                                        </React.Fragment>
                                     ))}
-                                </Stack>
+                                </Box>
                             </Box>
                         )}
+
                     </Toolbar>
                 </Container>
-
             </HideOnScroll>
 
             {!isLargeScreen && (
