@@ -69,7 +69,7 @@ export default function DentalImplants() {
                     py: 12,
                     textAlign: "center",
                     color: "white",
-                    backgroundImage: "url('/images/Treatments/braces.jpg')",
+                    backgroundImage: "url('/images/treatments/braces.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",

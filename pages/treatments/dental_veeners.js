@@ -41,7 +41,7 @@ export default function DentalVeneers() {
           py: 12,
           textAlign: "center",
           color: "white",
-          backgroundImage: "url('/images/Treatments/dental_veneers.jpg')",
+          backgroundImage: "url('/images/treatments/dental_veneers.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

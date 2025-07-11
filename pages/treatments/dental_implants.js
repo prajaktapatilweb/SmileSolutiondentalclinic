@@ -43,7 +43,7 @@ export default function DentalImplants() {
                     py: 12,
                     textAlign: "center",
                     color: "white",
-                    backgroundImage: "url('/images/Treatments/dental_implants.jpg')",
+                    backgroundImage: "url('/images/treatments/dental_implants.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",

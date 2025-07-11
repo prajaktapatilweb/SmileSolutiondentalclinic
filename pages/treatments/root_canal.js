@@ -34,7 +34,7 @@ export default function RootCanalTreatment() {
           py: 12,
           textAlign: "center",
           color: "white",
-          backgroundImage: "url('/images/Treatments/root_canal.jpg')",
+          backgroundImage: "url('/images/treatments/root_canal.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
