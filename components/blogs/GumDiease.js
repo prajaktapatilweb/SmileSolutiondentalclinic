@@ -1,11 +1,7 @@
 import React from 'react'
 import BlogSection from '../commonblogsec/BlogSection';
 import BlogList from '../commonblogsec/BlogList';
-import { Card, Container, Grid, Typography } from '@mui/material';
-import DentalImplantCostTable from '../commonblogsec/DentalImplantCostTable';
-import MythsVsFactsTable from '../commonblogsec/MythsVsFactsTable';
-import HealingTimelineTable from '../commonblogsec/HealingTimelineTable';
-import ComparisonTable from '../commonblogsec/ComparisonTable';
+import { Card, Container,Typography } from '@mui/material';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
 
 

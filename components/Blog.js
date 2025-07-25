@@ -33,12 +33,20 @@ export default function Blog() {
            Imagine a silent enemy, one that attacks your health without much warning, slowly but surely causing damage. That's often how gum disease, also known as periodontal disease, works. It's a common health issue that many people don't even realize they have until it's quite advanced. But the good news is, by understanding your risk and taking simple steps, you can protect your smile and your overall health...  </span>,
             link: '/blogs/gum-disease-risk-causes-prevention-tips'
         },
+        {
+            image:'/images/blog/denture.jpg',
+            title: "Dental Implants vs. Bridges vs. Dentures: What’s Right for You?",
+            para: <span>
+Losing a tooth can impact your smile, confidence, and ability to chew and speak. Fortunately, modern dentistry offers several excellent solutions to restore your smile and oral function. The most common options are dental implants, bridges, and dentures. Deciding which one is right for you involves considering various factors like the number of missing teeth, cost, longevity, and your overall oral health</span>,            
+                link: '/blogs/implants-vs-bridges-vs-dentures'
+    
+    },
 
     ]
     return (
         <div>
            <Container sx={{py:7}}>
-                    <Grid container spacing={2} alignItems="center" justifyContent="center">
+                    <Grid container spacing={2}>
                     {Blogdata1.map((item, i) => (
     <Grid item xs={12} sm={6} md={4} key={i}>
         <Card
