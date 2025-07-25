@@ -19,11 +19,13 @@ export default function RootCanalTreatment() {
   return (
     <>
       <Head>
-        <title>Root Canal Treatment in Borivali West | RCT Specialist Near Me</title>
+        <title>Root Canal Treatment in Borivali West, Mumbai | Smile Solutions</title>
         <meta
           name="description"
-          content="Seeking root canal treatment in Borivali West? Our RCT specialist, Dr. Kalpesh Dey, offers single-sitting root canal treatment & transparent cost of root canal treatment."
+          content="Seeking root canal treatment in Borivali West? Dr. Kalpesh Dey offers single-sitting RCT with expert care & transparent root canal treatment cost near you!"
         />
+        <link rel="canonical" href="https://www.smilesolutionsclinic.com/services/root-canal-treatment-in-borivali-west"/>
+
       </Head>
 
       <Navbar />
@@ -80,53 +82,54 @@ export default function RootCanalTreatment() {
           </Fade>
         </Container>
       </Box>
-
+<section style={{backgroundColor:'white'}}>
       <Container sx={{ py: 6 }}>
         <Fade in timeout={800}>
           <Box>
-            <Typography variant="h3" fontWeight="bold" gutterBottom color="primary">
+            {/* <Typography variant="h3" fontWeight="bold" gutterBottom color="primary">
               Expert Root Canal Care in Borivali West
-            </Typography>
+            </Typography> */}
             <Typography variant="h6" paragraph>
-            Experiencing tooth pain or sensitivity? A root canal treatment in Borivali West might be the solution you need to save your natural tooth from extraction. At <strong>Smile Solutions Dental Clinic</strong>, we specialize in providing advanced and comfortable root canal treatment in Borivali West, helping you eliminate pain and restore your oral health. Our dedicated team, led by <strong>Dr. Kalpesh Dey (MDS Endodontist & Cosmetic Dentist)</strong>, ensures you receive the highest standard of care, making us a top choice for your root canal in Borivali West.
+Experiencing tooth pain or sensitivity? A root canal might be the solution you need to save your natural tooth from extraction. At Smile Solutions Dental Clinic, we specialize in providing advanced and comfortable <b>root canal treatment in Borivali West</b>, helping you eliminate pain and restore your oral health. Our dedicated team, led by Dr. Kalpesh Dey (MDS Endodontist & Cosmetic Dentist), ensures you receive the highest standard of care, making us a top choice for your root canal needs.
             </Typography>
           </Box>
         </Fade>
 
-        <Divider sx={{ my: 6 }} />
+        <Divider sx={{ my: 3 }} />
 
         <Fade in timeout={800}>
           <Box>
-            <Typography variant="h3" fontWeight="bold" gutterBottom color="primary">
-              What is Root Canal Treatment (RCT)?
+            <Typography variant="h2" fontWeight="bold" gutterBottom color="primary">
+             What is Root Canal Treatment (RCT)?
             </Typography>
             <Typography variant="h6" paragraph>
-            Root canal treatment, often referred to as RCT, is a dental procedure designed to remove infected or damaged pulp (the soft tissue inside your tooth containing nerves and blood vessels) from the tooth's root canal. This treatment cleans and disinfects the inside of the tooth, which is then filled and sealed to prevent further infection. It's a highly effective way to relieve pain and save a tooth that would otherwise need to be extracted.
+Root canal treatment, often referred to as RCT, is a dental procedure designed to remove infected or damaged pulp (the soft tissue inside your tooth containing nerves and blood vessels) from the tooth's root canal. This treatment cleans and disinfects the inside of the tooth, which is then filled and sealed to prevent further infection. It's a highly effective way to relieve pain and save a tooth that would otherwise need to be extracted. If you’re experiencing severe tooth pain or sensitivity, visiting an endodontic clinic near you can help diagnose the issue early and provide expert care to restore your dental health.
             </Typography>
           </Box>
         </Fade>
 
-        <Divider sx={{ my: 6 }} />
+        <Divider sx={{ my: 3 }} />
 
         <Fade in timeout={800}>
   <Box>
-    <Typography variant="h3" fontWeight="bold" gutterBottom color="primary">
-      When Do You Need a Root Canal?
+    <Typography variant="h2" fontWeight="bold" gutterBottom color="primary">
+     When Do You Need a Root Canal?
+
     </Typography>
 
     {/* Intro Text */}
     <Typography variant="h6" gutterBottom>
-      You might need a root canal treatment if you experience:
+      You might need a <b>root canal treatment</b> if you experience:
     </Typography>
 
     <Grid container spacing={3} mt={1}>
       {[
         "Severe toothache pain while chewing or applying pressure",
-        "Prolonged sensitivity to hot or cold",
-        "Tooth discoloration or darkening",
-        "Swelling and tenderness in the gums",
-        "Recurring pimple-like bump on the gums",
-        "Chipped or cracked tooth with pulp exposure",
+        "Prolonged sensitivity to hot or cold temperatures, even after the source is removed.",
+        "Discoloration or darkening of the tooth.",
+        "Swelling and tenderness in the surrounding gums",
+        "A persistent pimple-like bump on the gums.",
+        "A chipped or cracked tooth with exposed pulp.",
       ].map((symptom, i) => (
         <Grid item xs={12} sm={6} key={i}>
           <Typography variant="h6" display="flex" alignItems="center" gap={1}>
@@ -145,58 +148,54 @@ export default function RootCanalTreatment() {
 </Fade>
 
 
-        <Divider sx={{ my: 6 }} />
+        <Divider sx={{ my: 3 }} />
 
         <Fade in timeout={800}>
           <Box>
-            <Typography variant="h3" fontWeight="bold" gutterBottom color="primary">
-              Meet Your RCT Specialist
+            <Typography variant="h2" fontWeight="bold" gutterBottom color="primary">
+            Your Expert RCT Specialist in Borivali West
             </Typography>
-            <Typography variant="h6" paragraph>
-            Finding a highly skilled RCT specialist in Borivali West is crucial for a successful and comfortable treatment experience. <strong><a
-  href="https://www.smilesolutionsclinic.com/#:~:text=Book%20An%20Appointment-,Dr.%20Kalpesh%20Dey,-MDS%20%2D%20Endodontist%20%26%20Cosmetic"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={{ color: '#1976d2', textDecoration: 'underline', fontWeight: 'bold' }}
->
-  Dr. Kalpesh Dey
-</a></strong>, our resident Endodontist (Root Canal Specialist), brings extensive expertise and a gentle approach to every procedure. With advanced training and a commitment to precision, Dr. Dey ensures that your root canal treatment is performed with the utmost care, utilizing modern techniques and equipment for optimal results. If you're searching for a Root Canal Treatment Near Me with a specialist touch, Smile Solutions is your answer.
-            </Typography>
+            <Typography variant="h6" paragraph>Finding a highly skilled RCT specialist in Borivali West is crucial for a successful and comfortable treatment experience. Dr. Kalpesh Dey, our resident Endodontist (Root Canal Specialist), brings extensive expertise and a gentle approach to every procedure. With advanced training and a commitment to precision, Dr. Dey ensures that your root canal treatment is performed with the utmost care, utilizing modern techniques and equipment for optimal results. If you're searching for a root canal treatment near me with a specialist touch, Smile Solutions is your answer.
+</Typography>
           </Box>
         </Fade>
 
-        <Divider sx={{ my: 6 }} />
+        <Divider sx={{ my: 3 }} />
 
         <Fade in timeout={800}>
           <Box>
             <Typography variant="h3" fontWeight="bold" gutterBottom color="primary">
-              Our Root Canal Process
+             The Root Canal Treatment Process
             </Typography>
             <Typography variant="h6" gutterBottom>
-            At Smile Solutions, your comfort and successful outcome are our priorities during root canal treatment in Borivali West:
+At Smile Solutions, your comfort and successful outcome are our priorities throughout the root canal procedure.
             </Typography>
             <Stack spacing={4} mt={4}>
               {[
                 {
                   title: "1. Diagnosis",
-                  desc: "Detailed clinical examination with X-rays to assess extent of infection.",
+                  desc: "We start with a thorough examination, including X-rays, to accurately diagnose the infection.",
                 },
                 {
-                  title: "2. Local Anesthesia",
-                  desc: "The area is completely numbed to ensure a pain-free experience.",
+                  title: "2. Anesthesia",
+                  desc: "Local anesthesia is administered to numb the tooth and surrounding area, ensuring a pain-free procedure.",
                 },
                 {
                   title: "3. Pulp Removal",
-                  desc: "The infected pulp is accessed and removed through the crown of the tooth.",
+                  desc: "A small opening is made in the crown of the tooth, and the infected pulp is carefully removed.",
                 },
                 {
                   title: "4. Cleaning & Shaping",
-                  desc: "Canals are disinfected and shaped using specialized endodontic tools.",
+                  desc: "The root canals are meticulously cleaned, disinfected, and shaped using specialized instruments.",
                 },
                 {
                   title: "5. Filling & Sealing",
-                  desc: "The canals are sealed with gutta-percha and the tooth is restored.",
+                  desc: " The cleaned canals are filled with a biocompatible material (gutta-percha) and sealed to prevent re-infection.",
                 },
+                {
+                  title:'Restoration: ',
+                  desc:'The tooth is then sealed with a temporary filling. In most cases, a permanent restoration like a dental crown is recommended to protect the treated tooth and restore its full function.'
+                }
               ].map((step, i) => (
                 <Paper
                   key={i}
@@ -231,29 +230,28 @@ export default function RootCanalTreatment() {
           </Box>
         </Fade>
 
-        <Divider sx={{ my: 6 }} />
+        <Divider sx={{ my: 3 }} />
 
         <Fade in timeout={800}>
           <Box>
-            <Typography variant="h3" fontWeight="bold" gutterBottom color="primary">
-              Single-Sitting Root Canal Option
+            <Typography variant="h2" fontWeight="bold" gutterBottom color="primary">
+             Single-Sitting Root Canal Treatment in Borivali West
             </Typography>
             <Typography variant="h6" paragraph>
-            For suitable cases, Smile Solutions offers single-sitting root canal treatment in Borivali West. This advanced technique allows our RCT specialist in Borivali West to complete the entire root canal procedure in just one visit, saving you time and reducing the need for multiple appointments. This is particularly beneficial for patients with busy schedules or those who prefer to complete treatment quickly. Our precise diagnostic tools and advanced techniques ensure the same high success rate as multi-visit procedures.
+For suitable cases, we offer <b>single sitting root canal</b> treatment in Borivali West clinic. This advanced technique allows our RCT specialist in Borivali West to complete the entire root canal procedure in just one visit, saving you time and reducing the need for multiple appointments. This is particularly beneficial for patients with busy schedules or those who prefer to complete treatment quickly. Our precise diagnostic tools and advanced techniques ensure the same high success rate as multi-visit procedures.
             </Typography>
           </Box>
         </Fade>
 
-        <Divider sx={{ my: 6 }} />
+        <Divider sx={{ my: 3 }} />
 
         <Fade in timeout={800}>
           <Box>
-            <Typography variant="h3" fontWeight="bold" gutterBottom color="primary">
-              Cost of Root Canal Treatment in Borivali West
+            <Typography variant="h2" fontWeight="bold" gutterBottom color="primary">
+             Cost of Root Canal Treatment at Smile Solutions Dental Clinic
             </Typography>
             <Typography variant="h6" gutterBottom>
-            Understanding the Cost of Root Canal Treatment in Borivali West is important. The root canal treatment price can vary depending on several factors, including the complexity of the case (which tooth is affected – front teeth generally simpler, molars more complex), the severity of the infection, and whether it's a single-sitting procedure.
-    </Typography>
+Understanding the root canal treatment cost is important. The price of root canal treatment can vary depending on several factors, including the complexity of the case (which tooth is affected – front teeth are generally simpler, molars more complex), the severity of the infection, and whether it’s a <b>single-sitting root canal</b> procedure.    </Typography>
     <Typography variant="body1" mt={1} gutterBottom>
   Here’s a general idea of <strong>root canal cost in Borivali West</strong> at Smile Solutions:
 </Typography>
@@ -263,17 +261,17 @@ export default function RootCanalTreatment() {
                 {
                   label: "Standard Root Canal Treatment",
                   cost: "₹4,000 – ₹9,000",
-                  note: "Based on tooth type (front, premolar, molar).",
+                  note: "Varies based on tooth type (front, premolar, molar).",
                 },
                 {
                   label: "Single-Sitting Root Canal",
                   cost: "₹5,000 – ₹10,000",
-                  note: "Slightly higher due to advanced instruments and materials.",
+                  note: "Often slightly higher due to specialized instruments/materials.",
                 },
                 {
-                  label: "RCT with Crown",
+                  label: "Root Canal Treatment Cost with Cap",
                   cost: "₹7,000 – ₹15,000+",
-                  note: "Includes RCT + crown (metal, PFM, or Zirconia).",
+                  note: "Includes RCT cost + cost of crown (metal, PFM, Zirconia).",
                 },
               ].map((item, i) => (
                 <Grid item xs={12} sm={6} md={4} key={i}>
@@ -320,23 +318,23 @@ export default function RootCanalTreatment() {
           </Box>
         </Fade>
 
-        <Divider sx={{ my: 6 }} />
+        <Divider sx={{ my: 3 }} />
 
         <Fade in timeout={800}>
           <Box>
-            <Typography variant="h3" fontWeight="bold" gutterBottom color="primary">
-              Why Choose Smile Solutions for RCT?
+            <Typography variant="h2" fontWeight="bold" gutterBottom color="primary">
+Why Choose Smile Solutions for Your Root Canal in Borivali West?
             </Typography>
             <Grid container spacing={3} mt={1}>
               {[
-                "Expert RCT specialist – Dr. Kalpesh Dey",
-                "Advanced technology & modern tools",
-                "Comfort-focused, painless care",
-                "Single-sitting root canal option",
-                "Transparent pricing",
-                "Convenient location in Borivali West",
+                <span><b>Expert RCT specialist:</b> Led by Dr. Kalpesh Dey, an MDS Endodontist, ensuring expert care.</span>,
+                <span><b>Advanced technology:</b>  We utilize modern equipment for precise and efficient treatment.</span>,
+                <span><b>Comfort-Focused Approach:</b>  We prioritize your comfort throughout the procedure.</span>,
+                <span><b>Single-Sitting Option:</b>  Save time with our efficient single-sitting root canal treatment. </span>,
+                <span><b>Transparent Pricing:</b>  Clear understanding of your cost of root canal treatment.</span>,
+                <span><b>Convenient Location:</b>  Easily accessible if you're searching for a root canal treatment near me.</span>,
               ].map((reason, i) => (
-                <Grid item xs={12} sm={6} key={i}>
+                <Grid item xs={12} sm={12} key={i}>
                   <Typography variant="h6" display="flex" alignItems="center" gap={1}>
                     <CheckCircleIcon color="primary" />
                     {reason}
@@ -345,12 +343,13 @@ export default function RootCanalTreatment() {
               ))}
             </Grid>
             <Typography variant="h6" gutterBottom mt={3}>
-              Don't let dental pain dictate your life. Contact Smile Solutions Dental Clinic today and book your consultation with Dr. Kalpesh Dey, your trusted RCT specialist in Borivali West.
+Don't let dental pain dictate your life. If you're experiencing discomfort or have concerns about your dental health, contact Smile Solutions, a leading <a>dental clinic in Borivali West</a>, today. We are committed to saving your natural teeth and restoring your healthy, pain-free smile.
+<br></br>Book your consultation with Dr. Kalpesh Dey for expert and compassionate care.
             </Typography>
           </Box>
         </Fade>
       </Container>
-
+</section>
       <Footer />
     </>
   );
