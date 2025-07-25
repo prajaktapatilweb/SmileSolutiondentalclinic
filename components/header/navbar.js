@@ -31,7 +31,7 @@ const navItems = [
         linkID: "/#treatments",
         label: "Treatments",
         subGroup: [
-              { label: "Dental Implants", linkID: "/treatments/dental_implants" },
+              { label: "Dental Implants", linkID: "/services/dental-implants-in-borivali-west" },
             { label: "Root Canal", linkID: "/treatments/root_canal" },
             { label: "Dental Veneers", linkID: "/treatments/dental_veeners" },
             { label: "Braces & Aligners", linkID: "/treatments/braces&aligners" },

@@ -23,14 +23,14 @@ const typography = {
       },
     },
     h2: {
-      fontSize: '1.75rem',
+      fontSize: '1.4rem',
       lineHeight: headingLineHeight,
       fontWeight: 700,
       '@media (min-width:600px)': {
-        fontSize: '2rem',
+        fontSize: '1.4',
       },
       '@media (min-width:960px)': {
-        fontSize: '2.5rem',
+        fontSize: '1.6rem',
       },
     },
     h3: {
