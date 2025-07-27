@@ -4,8 +4,6 @@ import Footer from "/components/footer/footer"; // adjust path as per your struc
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import React from "react";
-
-
 import {
     Box,
     Container,
@@ -19,8 +17,6 @@ import {
 } from "@mui/material";
 import { useInView } from "react-intersection-observer";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import PeopleIcon from "@mui/icons-material/People";
-import MedicalServicesIcon from "@mui/icons-material/MedicalServices";
 import HealingIcon from "@mui/icons-material/Healing";
 import DoneAllIcon from "@mui/icons-material/DoneAll";
 import GppGoodIcon from "@mui/icons-material/GppGood";
@@ -60,7 +56,6 @@ export default function DentalImplants() {
                 <title>Braces & Aligners in Borivali West | Teeth Straightening Near Me</title>
                 <meta name="description" content="Achieve a perfect smile with braces & aligners in Borivali West at Smile Solutions. Our orthodontic experts offer metal, ceramic, & clear aligners with transparent cost of braces & aligners." />
             </Head>
-
             <Navbar />
 
             <Box
@@ -126,12 +121,11 @@ export default function DentalImplants() {
                 <Box ref={ref1}>
                     <Slide direction="up" in={inView1} mountOnEnter unmountOnExit>
                         <Box>
-                            <Typography variant="h3" fontWeight="bold" gutterBottom color="primary">
+                            {/* <Typography variant="h3" fontWeight="bold" gutterBottom color="primary">
                             Precision Braces & Aligners Treatment in Borivali West
-                            </Typography>
+                            </Typography> */}
                             <Typography variant="h6" paragraph>
-                            Dreaming of a perfectly aligned smile but unsure if <strong>braces</strong> or <strong>aligners</strong> are right for you? At Smile Solutions Dental Clinic in Borivali West, we specialize in comprehensive <strong>orthodontic treatment</strong>, offering both traditional <strong>braces in Borivali West</strong> and advanced clear aligners in Borivali West to help you achieve the smile you've always desired. Our experienced dental team, including <strong>Dr. Heeral Chikhal</strong> (MDS Prosthodontist & Implantologist) and <strong>Dr. Kalpesh Dey </strong>(MDS Endodontist & Cosmetic Dentist), works collaboratively to provide personalized <strong>teeth straightening</strong> solutions with exceptional results.
-                            </Typography>
+Dreaming of a perfectly aligned smile but unsure if <b>braces or aligners</b> are right for you? At Smile Solutions Dental Clinic in Borivali West, we specialize in comprehensive <b>orthodontic treatment</b>, offering both traditional <b>braces in Borivali West</b> and advanced <b>clear aligners in Borivali West</b> to help you achieve the smile you've always desired. Our experienced dental team, including <b>Dr. Heeral Chikhal</b> (MDS Prosthodontist & Implantologist) and <b>Dr. Kalpesh Dey</b> (MDS Endodontist & Cosmetic Dentist), works collaboratively to provide personalized <b>teeth straightening</b> solutions with exceptional results.                            </Typography>
                         </Box>
                     </Slide>
                 </Box>
@@ -145,9 +139,8 @@ export default function DentalImplants() {
     </Typography>
 
     <Typography variant="h6" paragraph>
-      Orthodontic treatment goes beyond just aesthetics; it significantly impacts your overall oral health.
-      If you're experiencing issues like crooked teeth, overcrowding, gaps, or bite problems (overbite, underbite, crossbite),
-      <strong> teeth straightening in Borivali West </strong> can provide numerous benefits:
+Orthodontic treatment goes beyond just aesthetics; it significantly impacts your overall oral health. If you're experiencing issues like crooked teeth, overcrowding, gaps, or bite problems (overbite, underbite, crossbite), <b>teeth straightening in Borivali West</b> can provide numerous benefits:
+
     </Typography>
 
     <Grid container spacing={3} mt={1}>
@@ -160,7 +153,7 @@ export default function DentalImplants() {
         {
           icon: <HealingIcon color="primary" fontSize="large" />,
           title: "Enhanced Chewing Function",
-          desc: "Proper alignment improves bite, making it easier and more comfortable to chew food.",
+          desc: " Proper alignment improves bite, making it easier and more comfortable to chew food.",
         },
         {
           icon: <DoneAllIcon color="primary" fontSize="large" />,
@@ -170,12 +163,12 @@ export default function DentalImplants() {
         {
           icon: <GppGoodIcon color="primary" fontSize="large" />,
           title: "Speech Improvement",
-          desc: "Some alignment issues can affect speech, which orthodontic treatment can often correct.",
+          desc: <span>Some alignment issues can affect speech, which <b>orthodontic treatment</b> can often correct.</span>,
         },
         {
           icon: <CheckCircleIcon color="primary" fontSize="large" />,
           title: "Boosted Confidence",
-          desc: "A beautiful, straight smile can significantly improve self-esteem and confidence in social and professional settings.",
+          desc: " A beautiful, straight smile can significantly improve self-esteem and confidence in social and professional settings.",
         },
       ].map((item, i) => (
         <Grid item xs={12} sm={6} md={4} key={i}>
@@ -220,35 +213,41 @@ export default function DentalImplants() {
       Types of Braces Available at Smile Solutions
     </Typography>
     <Typography variant="h6" gutterBottom>
-      We offer a range of braces in Borivali West to suit different needs, preferences, and budgets for your Aligners Treatment or dental braces cost:
-    </Typography>
+We offer a range of <b>braces in Borivali West</b> to suit different needs, preferences, and budgets for your <b>Aligners Treatment</b> or <b>dental braces cost:</b>    </Typography>
     <Stack spacing={4} mt={4}>
       {[
         {
           title: "Metal Braces in Borivali West",
-          desc: `The most traditional and widely used type.
-Made from high-grade stainless steel, highly durable, and effective for complex cases.
-Often the most affordable dental braces cost in Borivali West.
-Modern metal braces are smaller and more comfortable than ever before.`,
+          desc: <span style={{lineHeight:1.9,ml:2}}>
+1. The most traditional and widely used type.<br></br>
+2. Made from high-grade stainless steel, highly durable, and effective for complex cases.<br></br>
+3. Often the most <b>affordable dental braces cost in Borivali West.</b><br></br>
+4. Modern <b>metal braces</b> are smaller and more comfortable than ever before.<br></br>
+</span>,
         },
         {
           title: "Ceramic Braces in Borivali West",
-          desc: `Similar in structure to metal braces, but the brackets are made of clear or tooth-colored ceramic material.
-Less noticeable than metal braces, offering a more aesthetic option.
-Popular among adults and older teens seeking a discreet solution.`,
+          desc: <span style={{lineHeight:1.9,ml:2}}>
+1. Similar in structure to metal braces, but the brackets are made of clear or tooth-colored ceramic material.<br></br>
+2. Less noticeable than <b>metal braces</b>, offering a more aesthetic option.<br></br>
+3. Popular among adults and older teens seeking a discreet solution.<br></br>
+</span>
         },
         {
           title: "Lingual Braces in Borivali West",
-          desc: `These are completely hidden as they are placed on the inside (tongue side) of your teeth.
-Truly invisible braces, making them an excellent choice for those highly conscious about their appearance during treatment.
-Custom-made to fit the unique shape of your teeth.`,
+          desc: <span style={{lineHeight:1.9,ml:2}}>
+1. These are completely hidden as they are placed on the inside (tongue side) of your teeth.<br></br>
+2. Truly <b>invisible braces</b>, making them an excellent choice for those highly conscious about their appearance during treatment.<br></br>
+3. Custom-made to fit the unique shape of your teeth.<br></br>
+</span>
         },
         {
           title: "Self-Ligating Braces",
-          desc: `Available in both metal and ceramic, these braces use a specialized clip mechanism instead of elastic ties to hold the archwire.
-May result in fewer and quicker adjustment appointments.
-Our orthodontic experts will discuss the best type of braces treatment for your specific case during your consultation.`,
-        },
+          desc: <span style={{lineHeight:1.9,ml:2}}>
+1. Available in both metal and ceramic, these braces use a specialized clip mechanism instead of elastic ties to hold the archwire.<br></br>
+2. May result in fewer and quicker adjustment appointments.<br></br>
+</span>
+   },
       ].map((brace, i) => (
         <Paper
           key={i}
@@ -280,6 +279,9 @@ Our orthodontic experts will discuss the best type of braces treatment for your 
         </Paper>
       ))}
     </Stack>
+        <Typography variant="h6" gutterBottom  sx={{mt:3}}>
+Our orthodontic experts will discuss the best type of <b>braces treatment</b> for your specific case during your consultation.
+</Typography>
   </Box>
 </Fade>
 
@@ -293,7 +295,8 @@ Our orthodontic experts will discuss the best type of braces treatment for your 
       Clear Aligners in Borivali West: The Invisible Choice
     </Typography>
     <Typography variant="h6" mt={1} mb={4}>
-      For those seeking a highly discreet and comfortable way to straighten their teeth, Clear Aligners in Borivali West are an excellent option. Also known as invisible braces in Borivali West or Invisalign (a popular brand of clear aligners), these custom-made, transparent trays gradually shift your teeth into the desired position without the need for brackets or wires. Consider Invisalign or invisible braces for a subtle smile transformation.
+For those seeking a highly discreet and comfortable way to straighten their teeth, <b>Clear Aligners in Borivali West</b> are an excellent option. Also known as <b>invisible braces in Borivali West</b> or <b>Invisalign</b> (a popular brand of clear aligners), these custom-made, transparent trays gradually shift your teeth into the desired position without the need for brackets or wires. Consider <b>invisalign or invisible braces</b> for a subtle smile transformation.
+    <br></br><b>Benefits of Clear Aligners:</b>
     </Typography>
 
     <Grid container spacing={4}>
@@ -301,28 +304,24 @@ Our orthodontic experts will discuss the best type of braces treatment for your 
         {
           number: 1,
           title: "Virtually Invisible",
-          desc: "The main advantage is their discreet appearance, making them popular for adults and teens who want to straighten teeth without visible braces. This is why many refer to them as invisible braces.",
+          desc:  <span>The main advantage is their discreet appearance, making them popular for adults and teens who want to straighten teeth without visible braces. This is why many refer to them as <b>invisible braces.</b></span>,
         },
         {
           number: 2,
           title: "Removable",
-          desc: "Aligners can be taken out for eating, drinking, brushing, and flossing, allowing for better oral hygiene and no food restrictions.",
+          desc: <span>Aligners can be taken out for eating, drinking, brushing, and flossing, allowing for better oral hygiene and no food restrictions.</span>
         },
         {
           number: 3,
           title: "Comfortable",
-          desc: "Made from smooth, flexible plastic, they typically cause less irritation to gums and cheeks compared to traditional teeth braces.",
+          desc: <span>Made from smooth, flexible plastic, they typically cause less irritation to gums and cheeks compared to traditional <b>teeth braces.</b></span>
         },
         {
           number: 4,
           title: "Fewer Emergency Visits",
-          desc: "No broken wires or brackets to worry about, reducing unexpected dental visits.",
+          desc: " No broken wires or brackets to worry about.",
         },
-        {
-          number: 5,
-          title: "Proven Results with Leading Systems",
-          desc: "We work with leading aligner systems to provide effective and predictable results for your Aligners Treatment at Smile Solutions.",
-        },
+        
       ].map((item, i) => (
         <Grid item xs={12} sm={6} md={4} key={i}>
           <Slide direction="up" in={true} timeout={500 + i * 200}>
@@ -373,6 +372,10 @@ Our orthodontic experts will discuss the best type of braces treatment for your 
         </Grid>
       ))}
     </Grid>
+    <Typography variant="h6" mt={3} mb={4}>
+
+    We work with leading aligner systems to provide effective and predictable results for your Aligners Treatment at Smile Solutions.
+  </Typography>
   </Box>
 </Fade>
 
@@ -415,7 +418,7 @@ Our orthodontic experts will discuss the best type of braces treatment for your 
       <Grid item xs={4}>
         <Paper elevation={3} sx={styles.headerCell}>
           <Typography variant="h6s" fontWeight="bold" noWrap>
-            Clear Aligners
+          Clear Aligners (e.g., Invisalign)
           </Typography>
         </Paper>
       </Grid>
@@ -498,19 +501,19 @@ Our orthodontic experts will discuss the best type of braces treatment for your 
     </Typography>
 
     {/* Intro Text */}
-    <Typography variant="h7" gutterBottom>
-      Whether you choose braces or clear aligners, your orthodontic journey at Smile Solutions follows a structured and personalized path:
-    </Typography>
+    <Typography variant="h6" gutterBottom>
+No matter if you choose <b>teeth braces</b> or <b>Aligners Treatment</b>, your journey to a straighter smile at Smile Solutions follows a clear path:    </Typography>
 
     <Grid container spacing={3} mt={1}>
       {[
-        "Initial Consultation: A thorough examination, including digital scans and X-rays, to assess your oral health and determine the best course of action. This is where we discuss your goals and provide a detailed treatment plan and orthodontic treatment cost in Borivali West.",
-        "Records & Planning: Detailed records (impressions, photos) are taken to create a precise, customized treatment plan.",
-        "Appliance Placement/Delivery: Your braces are carefully placed, or your first set of custom aligner trays is provided, along with instructions on wear and care. This marks the beginning of your Clear Aligners Treatment or Braces treatment.",
-        "Regular Adjustments/Tray Changes: Periodic visits for adjustments (braces) or to pick up new sets of aligners (aligners) to ensure teeth are moving as planned.",
-        "Retention: Once your teeth are in their ideal position, retainers (fixed or removable) are crucial to maintain your new smile and prevent relapse.",
-      ].map((step, i) => (
-        <Grid item xs={12} sm={6} key={i}>
+<span><b>Initial Consultation:</b> A thorough examination, including digital scans and X-rays, to assess your oral health and determine the best course of action. This is where we discuss your goals and provide a detailed treatment plan and <b>orthodontic treatment cost in Borivali West.</b></span>,
+<span><b>Records & Planning:</b> Detailed records (impressions, photos) are taken to create a precise, customized treatment plan.</span>,
+<span><b>Appliance Placement/Delivery:</b> Your braces are carefully placed, or your first set of custom aligner trays is provided, along with instructions on wear and care. This marks the beginning of your <b>Clear Aligners Treatment or Braces treatment.</b></span>,
+<span><b>Regular Adjustments/Tray Changes:</b> Periodic visits for adjustments (braces) or to pick up new sets of aligners (aligners) to ensure teeth are moving as planned.</span>,
+<span><b>Retention:</b> Once your teeth are in their ideal position, retainers (fixed or removable) are crucial to maintain your new smile and prevent relapse.</span>,
+
+       ].map((step, i) => (
+        <Grid item xs={12} sm={12} key={i}>
           <Box display="flex" alignItems="flex-start" gap={1}>
             <CheckCircleIcon color="primary" sx={{ mt: "5px" }} />
             <Typography variant="h6">{step}</Typography>
@@ -519,10 +522,7 @@ Our orthodontic experts will discuss the best type of braces treatment for your 
       ))}
     </Grid>
 
-    {/* Conclusion */}
-    <Typography variant="body1" mt={3}>
-      Each step is carefully monitored to ensure you achieve the best possible outcome with comfort and precision.
-    </Typography>
+   
   </Box>
 </Fade>
 
@@ -537,15 +537,13 @@ Our orthodontic experts will discuss the best type of braces treatment for your 
       color="primary"
       textAlign="left"
     >
-      Transparent Pricing
+     Cost of Braces & Aligners in Borivali West
+
     </Typography>
 
     <Typography variant="h6" gutterBottom>
-      Understanding the <strong>Cost of Braces and Aligners in Borivali West</strong> is an important part of your decision-making. The <strong>orthodontic treatment cost in Borivali West </strong>varies based on the type of appliance, the complexity and duration of your case, and individual patient needs. At Smile Solutions, we believe in transparent pricing and will provide a detailed quote after your initial consultation.
-
-    </Typography>
-
-    <Typography variant="body1" mt={1} gutterBottom>
+Understanding the <b>Cost of Braces and Aligners in Borivali West</b> is an important part of your decision-making. The <b>orthodontic treatment cost in Borivali West</b> varies based on the type of appliance, the complexity and duration of your case, and individual patient needs. At Smile Solutions, we believe in transparent pricing and will provide a detailed quote after your initial consultation.
+<br></br>
     Here’s a general overview of <strong>braces and aligners cost in Borivali West</strong>:
     </Typography>
 
@@ -554,37 +552,37 @@ Our orthodontic experts will discuss the best type of braces treatment for your 
         {
           label: "Metal Braces Cost in Borivali West",
           cost: "₹30,000 – ₹55,000+",
-          note: "Most affordable option, highly effective for all cases.",
+          note: <span>Most <b>affordable dental braces cost in Borivali West</b>, highly effective for all cases.</span>,
         },
         {
           label: "Ceramic Braces Cost in Borivali West",
           cost: "₹45,000 – ₹80,000+",
-          note: "Aesthetic and less visible compared to metal braces.",
+          note: <span>A more aesthetic option, less visible than <b>metal braces.</b></span>,
         },
         {
           label: "Lingual Braces Cost in Borivali West",
           cost: "₹80,000 – ₹1,50,000+",
-          note: "Completely hidden, placed on the back of teeth.",
+          note: <span>Placed on the back of teeth for complete invisibility. <b>(Invisible braces cost this type)</b>.</span>,
         },
         {
           label: "Clear Aligners Cost in Borivali West",
           cost: "₹80,000 – ₹2,50,000+",
-          note: "Removable and invisible, varies by brand and complexity.",
+          note: <span><b>Invisible braces in Borivali West</b>, highly aesthetic and removable. <b>Invisalign / Invisible Braces Cost or Teeth Aligners Cost</b> varies by brand/case complexity. Also covers <b>Clear Aligners Cost.</b></span>,
         },
         {
           label: "Self-Ligating Braces Cost",
           cost: "₹60,000 – ₹1,20,000+",
-          note: "May reduce treatment time and fewer clinic visits.",
+          note: "May offer quicker treatment times and fewer visits.",
         },
         {
           label: "Retainers (Post-Treatment)",
           cost: "₹5,000 – ₹15,000+",
-          note: "Essential to maintain results after braces/aligners.",
+          note: "Essential for maintaining results, separate from initial treatment cost.",
         },
         {
           label: "Consultation & Diagnostics",
           cost: "Included in overall cost*",
-          note: "Covers assessment, X-rays & planning (*may vary).",
+          note: "Initial assessment, X-rays, and treatment planning. (*May be a separate fee initially)",
         },
       ].map((item, i) => (
         <Grid item xs={12} sm={6} md={4} key={i}>
@@ -636,8 +634,7 @@ Our orthodontic experts will discuss the best type of braces treatment for your 
       ))}
     </Grid>
     <Typography variant="h6" gutterBottom mt={3}>
-    Please note that these are estimated ranges for <strong>teeth braces cost</strong> and <strong>Aligners cost</strong>. For a precise and personalized <strong>orthodontic treatment cost in Borivali West</strong>, we highly recommend scheduling a consultation. We also offer flexible payment options to make your smile journey more manageable.
-            </Typography>
+Please note that these are estimated ranges for <b>teeth braces cost</b> and Aligners cost. For a precise and personalized <b>orthodontic treatment cost in Borivali West</b>, we highly recommend scheduling a consultation. We also offer flexible payment options to make your smile journey more manageable.            </Typography>
   </Box>
 </Fade>
 
@@ -655,15 +652,12 @@ Our orthodontic experts will discuss the best type of braces treatment for your 
 
     <Grid container spacing={3} mt={1}>
       {[
-        "Expert Team – Our dentists, Dr. Heeral Chikhal and Dr. Kalpesh Dey, bring extensive experience in comprehensive dental care and smile aesthetics.",
-        "Personalized Care – We provide customized treatment plans tailored to your unique smile goals and oral health needs.",
-        "Advanced Technology – Modern diagnostic tools and efficient treatment techniques ensure accuracy and comfort.",
-        "Transparent Pricing – Clear breakdown of Braces & Aligners cost in Borivali West with no hidden charges.",
-        "Patient Comfort – Your satisfaction is our top priority throughout the entire orthodontic journey.",
-        "Expert RCT Specialist – Dr. Kalpesh Dey ensures precise and pain-free root canal procedures.",
-        "Comfort-Focused, Painless Care – We prioritize a gentle and stress-free experience.",
-        "Single-Sitting Root Canal Option – Fast and efficient treatment for your convenience.",
-        "Convenient Location in Borivali West – Easy access and trusted local presence.",
+<span><b>Expert Team:</b> Our dentists, <b>Dr. Heeral Chikhal</b> and <b>Dr. Kalpesh Dey</b>, bring extensive experience in comprehensive dental care and smile aesthetics, ensuring a holistic approach to your <b>orthodontic treatment</b> needs.</span>,
+<span><b>Personalized Care:</b> We understand that every smile is unique. We provide customized treatment plans tailored to your specific goals and oral health requirements for your <b>teeth straightening.</b></span>,
+<span><b>Advanced Technology:</b> We utilize modern diagnostic tools and treatment techniques for precise, efficient, and comfortable <b>orthodontic treatment.</b></span>,
+<span><b>Transparent Pricing:</b> You'll receive a clear breakdown of your Cost of Braces and Aligners in Borivali West with no hidden fees, whether it's for dental braces cost or Clear Aligners Cost.</span>,
+<span><b>Patient Comfort:</b> Your comfort and satisfaction are our top priorities throughout your entire <b>Aligners Treatment or Braces Treatment</b> journey.</span>,
+
       ].map((reason, i) => (
         <Grid item xs={12} sm={6} key={i}>
           <Box display="flex" alignItems="flex-start" gap={1}>
@@ -675,7 +669,9 @@ Our orthodontic experts will discuss the best type of braces treatment for your 
     </Grid>
 
     <Typography variant="h6" gutterBottom mt={3}>
-      Don’t let misaligned teeth hold you back from showcasing your best smile. Contact Smile Solutions Dental Clinic today for a consultation about braces and aligners in Borivali West. Let us help you achieve the beautifully straight, healthy smile you deserve!
+journey.
+Don't let misaligned teeth hold you back from showcasing your best smile. Contact Smile Solutions Dental Clinic today for a consultation about <b>braces and aligners in Borivali West</b>. Let us help you achieve the beautifully straight, healthy smile you deserve!
+<br></br><br></br><b>Ready to start your smile transformation? Book your orthodontic consultation at Smile Solutions in Borivali West today!</b>
     </Typography>
   </Box>
 </Fade>

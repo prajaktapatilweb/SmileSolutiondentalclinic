@@ -101,7 +101,7 @@ export default function DentalVeneers() {
              <Typography variant="h6" paragraph>
          Veneers are thin, custom-made shells designed to cover the front surface of your teeth, instantly improving their appearance. They are meticulously crafted to blend seamlessly with your natural teeth, correcting various imperfections and creating a harmonious, symmetrical smile. Veneers are a popular choice for a smile makeover, offering a durable and aesthetically pleasing solution.
 </Typography>
-        <Divider sx={{ my: 6 }} />
+        <Divider sx={{ my: 3 }} />
 
         <Fade in timeout={1000}>
           <Box>
@@ -131,7 +131,7 @@ export default function DentalVeneers() {
           </Box>
         </Fade>
 
-        <Divider sx={{ my: 6 }} />
+        <Divider sx={{ my: 3 }} />
 
 <Typography variant="h3" fontWeight="bold" color="primary" gutterBottom>
   Types of Dental Veneers Available
@@ -219,7 +219,7 @@ At Smile Solutions, we offer different types of veneers in Borivali West to suit
  <Typography variant="h6" paragraph sx={{mt:3}}>
 Our cosmetic dental team, including Dr. Heeral & Dr. Kalpesh, will discuss the pros and cons of each type to help you make an informed decision for your dental veneer treatment in Borivali West.
 </Typography>
-        <Divider sx={{ my: 6 }} />
+        <Divider sx={{ my: 3 }} />
 
         <Box ref={ref2}>
           {inView2 && (
@@ -296,7 +296,7 @@ Our cosmetic dental team, including Dr. Heeral & Dr. Kalpesh, will discuss the p
           )}
         </Box>
 
-        <Divider sx={{ my: 6 }} />
+        <Divider sx={{ my: 3 }} />
 
         {inView2 && (
           <Fade in timeout={1000}>
@@ -390,7 +390,7 @@ Understanding the Cost of dental veneers in Borivali West is a key concern for m
           </Fade>
         )}
 
-        <Divider sx={{ my: 6 }} />
+        <Divider sx={{ my: 3 }} />
 
         <Fade in timeout={800}>
   <Box>
