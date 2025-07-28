@@ -35,6 +35,9 @@ const navItems = [
             { label: "Root Canal", linkID: "/services/root-canal-treatment-in-borivali-west" },
             { label: "Dental Veneers", linkID: "/services/dental-veneers-in-borivali-west" },
             { label: "Braces & Aligners", linkID: "/services/braces-and-aligners-in-borivali-west" },
+            { label: "Pediatric Dentist", linkID: "/services/pediatric-dentist-in-borivali-west" },
+
+           
         ],
     },
     { linkID: "/#Doctors", label: "Doctors" },
