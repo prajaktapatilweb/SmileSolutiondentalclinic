@@ -88,7 +88,7 @@ export default function Pediatricdental() {
                         py: 14,
                         textAlign: "center",
                         color: "white",
-                        backgroundImage: "url('/images/treatments/kids.jpg')",
+                        backgroundImage: "url('/images/treatments/kids1.jpg')",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         backgroundRepeat: "no-repeat",

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Navbar from "/components/header/navbar"; // adjust path as per your structure
 import Footer from "/components/footer/footer"; // adjust path as per your structure
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import React from "react";
 import {
     Box,
@@ -12,13 +11,9 @@ import {
     Divider,
     Slide,
     Fade,
-    Stack,
     Table, TableBody, TableCell, TableContainer,
-    TableHead, TableRow, Accordion,
-    AccordionSummary,
-    AccordionDetails,
+    TableHead, TableRow, 
 } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useInView } from "react-intersection-observer";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
@@ -34,55 +29,11 @@ const whiteningMyths = [
   { myth: "Whitening is painful", fact: "Temporary sensitivity is mild and manageable" },
   { myth: "Whitening lasts forever", fact: "With good care, results can last 1–2 years" },
 ];
-const treatments = [
-    { name: "Pediatric Dental Check-up", price: "₹300 – ₹600", remarks: "Includes oral exam and consultation" },
-    { name: "Teeth Cleaning & Polishing for Children", price: "₹700 – ₹1,000", remarks: "Removes plaque, tartar, stains" },
-    { name: "Fluoride Treatment", price: "₹800 – ₹1,200", remarks: "Strengthens enamel, prevents cavities" },
-    { name: "Cavity Filling (Tooth-Colored)", price: "₹1,000 – ₹2,500", remarks: "Based on cavity size and location" },
-    { name: "Dental Sealants (per tooth)", price: "₹1,200 – ₹1,800", remarks: "Prevents decay on molars and premolars" },
-    { name: "Space Maintainers", price: "₹2,000 – ₹5,000", remarks: "Custom-made device" },
-    { name: "Emergency Dental Visit for Kids", price: "₹500 – ₹1,500", remarks: "Based on treatment required" },
-    { name: "Habit Counseling (Thumb Sucking, etc.)", price: "₹500 – ₹1,000 per session", remarks: "Behavioral guidance and correction plan" },
-];
-const criteriaData = [
-    { criteria: "Training", pediatric: "Specialized in child dental care", general: "General population" },
-    { criteria: "Behavior Management", pediatric: "Skilled in working with anxious children", general: "May lack pediatric focus" },
-    { criteria: "Equipment", pediatric: "Child-sized instruments and chairs", general: "Standard tools" },
-    { criteria: "Clinic Environment", pediatric: "Playful, fun, and stress-free", general: "Neutral or clinical" },
-];
-const faqs = [
-    { q: "What age is considered pediatric in dentistry?", a: "Pediatric care includes children from birth to 18 years." },
-    { q: "How often should kids visit the dentist?", a: "Every 6 months, or more frequently if recommended by your dentist." },
-    { q: "Why fill cavities in baby teeth?", a: "Untreated decay in baby teeth can lead to infection, pain, and affect permanent teeth." },
-    { q: "Are dental X-rays safe for kids?", a: "Yes, we use low-radiation digital X-rays and only when necessary." },
-    { q: "My child is scared of the dentist—what can we do?", a: "Our team uses behavior guidance, storytelling, and gentle explanations to ease fear and create positive experiences." }
-];
-const styles = {
-    headerCell: {
-        p: 2,
-        textAlign: "center",
-        backgroundColor: "rgba(1, 166, 162, 0.8)",
-        color: "#fff",
-        borderRadius: 2,
-        backdropFilter: "blur(6px)",
-    },
-    cell: {
-        p: 2,
-        backgroundColor: "rgba(240, 248, 255, 0.6)",
-        backdropFilter: "blur(4px)",
-        borderRadius: 2,
-        height: "100%",
-        textAlign: "center",
-        transition: "all 0.3s ease",
-        '&:hover': {
-            transform: 'translateY(-3px)',
-            boxShadow: '0 6px 12px rgba(0,0,0,0.1)',
-        },
-    },
-};
+
+
+
 export default function Pediatricdental() {
     const [ref1, inView1] = useInView({ triggerOnce: true });
-    const [ref2, inView2] = useInView({ triggerOnce: true });
 
     return (
         <>
@@ -100,7 +51,7 @@ export default function Pediatricdental() {
                         py: 14,
                         textAlign: "center",
                         color: "white",
-                        backgroundImage: "url('/images/treatments/kids.jpg')",
+                        backgroundImage: "url('/images/treatments/mainsmile2.jpg')",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         backgroundRepeat: "no-repeat",
