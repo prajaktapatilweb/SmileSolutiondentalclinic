@@ -36,8 +36,7 @@ const navItems = [
             { label: "Dental Veneers", linkID: "/services/dental-veneers-in-borivali-west" },
             { label: "Braces & Aligners", linkID: "/services/braces-and-aligners-in-borivali-west" },
             { label: "Pediatric Dentist", linkID: "/services/pediatric-dentist-in-borivali-west" },
-
-           
+            { label: "Teeth Whitening", linkID: "/services/teeth-whitening-in-borivali-west" },  
         ],
     },
     { linkID: "/#Doctors", label: "Doctors" },
