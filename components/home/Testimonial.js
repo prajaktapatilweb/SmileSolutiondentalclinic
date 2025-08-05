@@ -22,7 +22,7 @@ const SliderArrow = (props) => {
                     backgroundColor: "primary.light",
                     color: "primary.contrastText",
                 },
-                bottom: "-38px !important",
+                // bottom: "-50px !important",
                 left: "unset !important",
                 right: type === "prev" ? "60px !important" : "0 !important",
                 zIndex: 10,
@@ -43,11 +43,11 @@ const SliderArrow = (props) => {
 };
 const StyledDots = styled("ul")(({ theme }) => ({
     "&.slick-dots": {
-        position: "absolute",
+        position: "relative",
         left: 0,
         textAlign: "center",
         "& li": {
-            marginRight: theme.spacing(2),
+            marginRight: theme.spacing(1),
             "&.slick-active>div": {
                 backgroundColor: theme.palette.primary.light,
             },

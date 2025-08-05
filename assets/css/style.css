@@ -82,7 +82,7 @@ section {
   border-radius: 20px;
   position: relative; /* Ensure the card content is positioned relative to the container */
   overflow: visible; /* Allow content to overflow the container */
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.15);
   max-width: 400px;
   text-align: center;
   background-image: linear-gradient(white, white),
