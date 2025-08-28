@@ -74,7 +74,9 @@ function Herohome() {
     mt:5
   }}
 >
-  Transforming Smiles Every Day
+ Transforming Smiles Every Day
+
+
 </MotionTypography>
 
               <Hidden smDown>
@@ -87,7 +89,7 @@ function Herohome() {
                     fontSize: '20px'
                   }}
                 >
-                  Top-Rated Dental Clinic in Borivali West
+                Top-Rated Dentist in Borivali West
                 </motion.h3>
               </Hidden>
 

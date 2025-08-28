@@ -154,7 +154,7 @@ px:2
 
               <StyledButton color="primary" size="large" variant="contained">
                 <a
-                  href="https://www.practo.com/mumbai/doctor/heeral-chikhal-dentist"
+                  href="https://www.clinicspots.com/doctor/dr-heeral-chikhal"
                   style={{ color: "white", textDecoration: "none" }}
                 >
                   {" "}

@@ -24,7 +24,7 @@ export default function MyApp(props) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
 
         <title>
-          Dentist in Borivali West - Smile Solutions Advanced Dental Care
+         Dentist in Borivali West | Dental Clinic in Borivali West
 
         </title>
         {/* Website Monitoring Code - */}
