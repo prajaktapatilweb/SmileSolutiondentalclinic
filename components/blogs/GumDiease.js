@@ -3,6 +3,7 @@ import BlogSection from '../commonblogsec/BlogSection';
 import BlogList from '../commonblogsec/BlogList';
 import { Card, Container,Typography } from '@mui/material';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@mui/material';
+import Head from 'next/head';
 
 
 export default function GumDiease() {
@@ -12,6 +13,63 @@ export default function GumDiease() {
   ];
   return (
     <div>
+<Head>
+      <meta name="title" content=' The Silent Threat: Are You at Risk for Gum Disease? (And What You Can Do About It!)'></meta>
+         <meta name='description' content="Discover if you're at risk for gum disease and learn practical ways to protect your smile. Find out the top causes, prevention tips, and cost of dental cleaning in India."></meta> 
+        <link rel="canonical" href="https://www.smilesolutionsclinic.com/blogs/gum-disease-risk-causes-prevention-tips"/>
+
+<script
+                                    type="application/ld+json"
+                                    dangerouslySetInnerHTML={{
+                                        __html: JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.smilesolutionsclinic.com/blogs/gum-disease-risk-causes-prevention-tips"
+  },
+  "headline": "The Silent Threat: Are You at Risk for Gum Disease? (And What You Can Do About It!)",
+  "description": "Discover if you're at risk for gum disease and learn practical ways to protect your smile. Find out the top causes, prevention tips, and cost of dental cleaning in India.",
+  "image": "https://www.smilesolutionsclinic.com/images/blog/gumdisease.jpg",  
+  "author": {
+    "@type": "Organization",
+    "name": "admin",
+    "url": "https://www.smilesolutionsclinic.com/"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.smilesolutionsclinic.com/_next/image?url=%2Fimages%2Flogosmile1.png&w=384&q=75"
+    }
+  },
+  "datePublished": "2025-07-03"
+}),
+}}
+/>
+
+
+
+<meta property="og:title" content="The Silent Threat: Are You at Risk for Gum Disease? (And What You Can Do About It!)" />
+<meta property="og:description" content="Discover if your at risk for gum disease and learn practical ways to protect your smile. Find out the top causes, prevention tips, and cost of dental cleaning in India." />
+<meta property="og:type" content="artical" />
+<meta property="og:url" content=" https://www.smilesolutionsclinic.com/blogs/gum-disease-risk-causes-prevention-tips" />
+<meta property="og:image" content="https://www.smilesolutionsclinic.com/images/blog/gumdisease.jpg" />
+<meta property="og:site_name" content="Smile Solutions" />
+<meta property="og:locale" content="en_US" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Silent Threat: Are You at Risk for Gum Disease? (And What You Can Do About It!)" />
+<meta name="twitter:description" content="Discover if your at risk for gum disease and learn practical ways to protect your smile. Find out the top causes, prevention tips, and cost of dental cleaning in India." />
+<meta name="twitter:image" content="https://www.smilesolutionsclinic.com/images/blog/gumdisease.jpg" />
+<meta name="twitter:site" content="@SmileSolutionsB" />
+<meta name="twitter:url" content="https://www.smilesolutionsclinic.com/blogs/gum-disease-risk-causes-prevention-tips" />
+
+
+
+</Head>
+
         <Container sx={{py:7,}}>
     <Card sx={{p:{xs:3,sm:3,md:7},boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}}>
       <Typography variant='h3' sx={{ color: '#20509e',fontSize:{xs:20,md:30} }}>The Silent Threat: Are You at Risk for Gum Disease? (And What You Can Do About It!)</Typography>

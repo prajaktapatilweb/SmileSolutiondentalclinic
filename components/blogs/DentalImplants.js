@@ -7,11 +7,30 @@ import DentalImplantCostTable from '../commonblogsec/DentalImplantCostTable';
 import MythsVsFactsTable from '../commonblogsec/MythsVsFactsTable';
 import HealingTimelineTable from '../commonblogsec/HealingTimelineTable';
 import ComparisonTable from '../commonblogsec/ComparisonTable';
+import Head from 'next/head';
 
 export default function DentalImplants() {
   return (
+<> 
+<Head>
+  <meta property="og:title" content="Are Dental Implants Worth It? Insights from Dr. Heeral Chikhal & Dr. Kalpesh Dey" />
+<meta property="og:description" content="Get expert insights on dental implants from Dr. Heeral Chikhal & Dr. Kalpesh Dey, covering benefits, cost, types, and long-term value." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.smilesolutionsclinic.com/blogs/dental-implants-insights-from-the-experts" />
+<meta property="og:image" content="https://www.smilesolutionsclinic.com/images/blog/dentalimplant.jpg" />
+<meta property="og:site_name" content="Smile Solutions" />
+<meta property="og:locale" content="en_US" />
 
-    <Container sx={{py:7,}}>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Are Dental Implants Worth It? Insights from Dr. Heeral Chikhal & Dr. Kalpesh Dey" />
+<meta name="twitter:description" content="Get expert insights on dental implants from Dr. Heeral Chikhal & Dr. Kalpesh Dey, covering benefits, cost, types, and long-term value." />
+<meta name="twitter:image" content="https://www.smilesolutionsclinic.com/images/blog/dentalimplant.jpg" />
+<meta name="twitter:site" content="@SmileSolutionsB" />
+<meta name="twitter:url" content="https://www.smilesolutionsclinic.com/blogs/dental-implants-insights-from-the-experts" />
+
+  
+  </Head>   
+<Container sx={{py:7,}}>
     <Card sx={{p:{xs:3,sm:3,md:7},boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}}>
       <Typography variant='h3' sx={{ color: '#20509e',fontSize:{xs:20,md:30} }}>Are Dental Implants Worth It? Insights from Dr. Heeral Chikhal & Dr. Kalpesh Dey</Typography>
      <h3>Expert Insights from Dr. Heeral Chikhal & Dr. Kalpesh Dey</h3>
@@ -114,5 +133,7 @@ export default function DentalImplants() {
 </p>    </BlogSection>
     </Card>
    </Container>
+   </>
+
   );
 }

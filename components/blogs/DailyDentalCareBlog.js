@@ -5,11 +5,29 @@ import BlogTable from '../commonblogsec/BlogTable';
 import BlogStats from '../commonblogsec/BlogStats';
 import BlogFinalNote from '../commonblogsec/BlogFinalNote';
 import { Card, Container, Grid, Typography } from '@mui/material';
+import Head from 'next/head';
 
 export default function DailyDentalCareBlog() {
   return (
+<> 
+<Head>
+  <meta property="og:title" content="Smile Brighter: Top 10 Tips for Daily Dental Care" />
+<meta property="og:description" content="Discover 10 essential dental care tips for a healthier smile. Learn expert-backed routines, diet do's and don’ts, and oral care advice for all ages." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.smilesolutionsclinic.com/blogs/top-10-dental-care-tips" />
+<meta property="og:image" content="https://www.smilesolutionsclinic.com/images/blog/dentalcare.jpg" />
+<meta property="og:site_name" content="Smile Solutions" />
+<meta property="og:locale" content="en_US" />
 
-    <Container sx={{py:7,}}>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Smile Brighter: Top 10 Tips for Daily Dental Care" />
+<meta name="twitter:description" content="Discover 10 essential dental care tips for a healthier smile. Learn expert-backed routines, diet do's and don’ts, and oral care advice for all ages." />
+<meta name="twitter:image" content="https://www.smilesolutionsclinic.com/images/blog/dentalcare.jpg" />
+<meta name="twitter:site" content="@SmileSolutionsB" />
+<meta name="twitter:url" content="https://www.smilesolutionsclinic.com/blogs/top-10-dental-care-tips" />
+
+  </Head>  
+<Container sx={{py:7,}}>
     <Card sx={{p:{xs:3,sm:3,md:7},boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}}>
       <Typography variant='h3' sx={{ color: '#20509e',fontSize:{xs:20,md:30} }}>Smile Brighter: Top 10 Tips for Daily Dental Care</Typography>
       <p>
@@ -85,5 +103,7 @@ export default function DailyDentalCareBlog() {
       <BlogFinalNote />
     </Card>
    </Container>
+   </>
+
   );
 }

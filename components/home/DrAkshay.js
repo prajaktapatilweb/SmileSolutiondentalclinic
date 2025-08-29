@@ -6,7 +6,7 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { motion } from 'framer-motion';
 import Heading from "./Heading";
-import { headList3, headList9 } from "../constants/titlefile";
+import { headList3 } from "../constants/titlefile";
 import StarIcon from "@mui/icons-material/Star";
 import { StyledButton } from "../styled-button";
 
